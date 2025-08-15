@@ -8,6 +8,11 @@
   <style>
     :root { --max: 740px; }
     html, body { height: 100%; margin: 0; }
+    @media (min-width: 900px) 
+    {
+      .card {max-width: 500px; /* más estrecho en escritorio */}
+      body {font-size: 1.1rem; /* texto un poco más grande */}
+    }
     body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.5; }
     .wrap { min-height: 100%; display: grid; place-items: center; padding: 4rem 1.25rem; }
     .card { max-width: var(--max); text-align: center; }
@@ -34,13 +39,14 @@
       <img src="/jerusa-villergas.jpg" alt="Imagen de una primate curiosa, que es lo que soy.">
       <h1>Hola.</h1>
       <p>Soy Jerusa Villergas y esta es mi web personal.</p>
-      <p>No utilizo redes sociales ni quisiera llevarte a perder el tiempo en ellas.</p>
+      <p>No utilizo redes sociales, ni quisiera llevarte a perder el tiempo en ellas.</p>
       <p>Si quieres contactar conmigo puedes llamarme por teléfono (si tienes mi número, claro)<br> o escribirme un email a: <a class="btn" href="mailto:jerusavillergas@gmail.com">jerusavillergas@gmail.com</a></p>
     </section>
   </main>
 </body>
 
 </html>
+
 
 
 
