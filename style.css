@@ -1,44 +1,90 @@
-:root { --maxw: 1100px; }
-body { margin:0; font-family: sans-serif; }
-.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;}
+/* Variables y base (tu CSS original, adaptado) */
+:root { --max: 740px; }
+html, body { height: 100%; margin: 0; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.5; background:#fff; color:#111; }
+a { text-decoration: none; color: inherit; }
+img { max-width: 600px; width: 100%; height: auto; border-radius: 16px; display: block; margin: 0 auto 1rem; }
+h1 { font-size: clamp(1.75rem, 2.5vw + 1rem, 2.5rem); margin: 0.25rem 0 0.5rem; }
+p { margin: 0.25rem 0 1rem; color: #333; }
 
-.topnav{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:1000;}
-.topnav__inner{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0.75rem 1rem;}
+.wrap { min-height: 100%; display: grid; place-items: center; padding: 4rem 1.25rem; }
+.card { max-width: var(--max); text-align: center; }
 
-.brand{font-weight:700;text-decoration:none;color:#111;}
-.nav-toggle{display:none;background:none;border:1px solid #ddd;border-radius:6px;padding:.4rem .6rem;cursor:pointer;}
-
-.menu{list-style:none;display:flex;gap:1rem;margin:0;padding:0;align-items:center;}
-.menu > li > a,
-.submenu-toggle{display:inline-block;text-decoration:none;color:#111;padding:.5rem .4rem;border-radius:6px;}
-.menu > li > a:hover, .submenu a:hover, .submenu-toggle:hover{background:#f4f4f4;}
-
-.has-submenu{position:relative;}
-.submenu-toggle{background:none;border:none;cursor:pointer;font:inherit;}
-.submenu{position:absolute;left:0;top:100%;min-width:220px;background:#fff;border:1px solid #eee;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.06);list-style:none;margin:.4rem 0 0;padding:.4rem 0;display:none;}
-.submenu li a{display:block;padding:.55rem .8rem;color:#111;text-decoration:none;border-radius:0;}
-
-@media (hover:hover){
-  /* Hover en escritorio */
-  .has-submenu:hover .submenu{display:block;}
+/* Botón (tu estilo) */
+.btn {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border-radius: 600px;
+  border: 1px solid #ccc;
+  color: #8B4513;
 }
+.btn:hover { background-color: #f5f5f5; }
 
-/* MÓVIL */
-@media (max-width: 900px){
-  .nav-toggle{display:inline-block;}
-  .menu{position:absolute;inset:60px 0 auto 0;background:#fff;border-bottom:1px solid #eee;flex-direction:column;gap:0;display:none;}
-  .menu.show{display:flex;}
-  .menu > li{width:100%;}
-  .menu > li > a, .submenu-toggle{width:100%;text-align:left;padding:1rem;}
-  .has-submenu{width:100%;}
-  .submenu{position:static;border:none;box-shadow:none;border-radius:0;margin:0;padding:0;display:none;}
-  .submenu.show{display:block;}
-}
-
-/* Tu saludo */
-.big-greeting {
-  font-size: 5rem;
-  font-weight: bold;
+/* Footer (tu estilo) */
+footer {
   text-align: center;
-  margin: 2rem 0;
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 3rem;
+  padding: 1rem 0;
+  border-top: 1px solid #ddd;
+}
+
+/* Utilidad accesible (para H1 oculto y texto solo-lectores) */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0);
+  border: 0; white-space: nowrap;
+}
+
+/* Tu saludo grande */
+.big-greeting { font-size: 5rem; font-weight: 700; margin: 1.5rem 0 1rem; }
+
+/* ===== Navegación superior (integrada a tu estética) ===== */
+.topnav { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #ddd; z-index: 1000; }
+.topnav__inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+.brand { font-weight: 600; color: #333; }
+.nav-toggle {
+  display: none;
+  background: none; border: 1px solid #ccc; border-radius: 6px;
+  padding: .3rem .5rem; cursor: pointer;
+}
+.menu { list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0; align-items: center; }
+.menu > li > a, .submenu-toggle {
+  text-decoration: none; color: #333;
+  padding: 0.3rem 0.5rem; border-radius: 4px;
+}
+.menu > li > a:hover, .submenu-toggle:hover, .submenu a:hover { background: #f5f5f5; }
+
+.has-submenu { position: relative; }
+.submenu-toggle { background: none; border: none; cursor: pointer; font: inherit; }
+.submenu {
+  position: absolute; left: 0; top: 100%;
+  min-width: 200px; background: #fff; border: 1px solid #ddd;
+  list-style: none; margin: .3rem 0 0; padding: 0.4rem 0; display: none;
+}
+.submenu li a { display: block; padding: .4rem .6rem; color: #333; text-decoration: none; }
+
+@media (hover:hover){ .has-submenu:hover .submenu { display: block; } }
+
+/* Móvil */
+@media (max-width: 800px){
+  .nav-toggle { display: inline-block; }
+  .menu {
+    position: absolute; top: 50px; left: 0; right: 0;
+    background: #fff; border-bottom: 1px solid #ddd;
+    flex-direction: column; gap: 0; display: none;
+  }
+  .menu.show { display: flex; }
+  .menu > li { width: 100%; }
+  .menu > li > a, .submenu-toggle { width: 100%; text-align: left; padding: 1rem; }
+  .submenu { position: static; border: none; margin: 0; padding: 0; display: none; }
+  .submenu.show { display: block; }
 }
