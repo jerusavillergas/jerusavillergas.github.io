@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Jerusa Villergas – Psicóloga en Santiago de Compostela</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV SUPERIOR -->
+  <nav class="topnav" role="navigation" aria-label="Principal">
+    <div class="topnav__inner">
+      <a class="brand" href="/">Jerusa Villergas</a>
+
+      <!-- Botón hamburguesa (móvil) -->
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Abrir menú</span>
+        ☰
+      </button>
+
+      <!-- Menú -->
+      <ul id="nav-menu" class="menu">
+        <li><a href="/">Inicio</a></li>
+
+        <!-- Desplegable -->
+        <li class="has-submenu">
+          <button class="submenu-toggle" aria-expanded="false" aria-haspopup="true">
+            Servicios
+          </button>
+          <ul class="submenu">
+            <li><a href="/terapia-individual">Terapia individual</a></li>
+            <li><a href="/terapia-online">Terapia online</a></li>
+            <li><a href="/talleres">Talleres</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/sobre-mi">Sobre mí</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <p class="big-greeting">hola</p>
+  </main>
+
+  <!-- JS externo -->
+  <script src="menu.js"></script>
+</body>
+</html>
