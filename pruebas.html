@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <title>Jerusa Villergas – Psicóloga en Santiago de Compostela</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- CSS -->
+  <meta name="description" content="Psicóloga en Santiago de Compostela. Terapia individual y online.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,21 +14,15 @@
     <div class="topnav__inner">
       <a class="brand" href="/">Jerusa Villergas</a>
 
-      <!-- Botón hamburguesa (móvil) -->
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
-        <span class="sr-only">Abrir menú</span>
-        ☰
+        <span class="sr-only">Abrir menú</span> ☰
       </button>
 
-      <!-- Menú -->
       <ul id="nav-menu" class="menu">
         <li><a href="/">Inicio</a></li>
 
-        <!-- Desplegable -->
         <li class="has-submenu">
-          <button class="submenu-toggle" aria-expanded="false" aria-haspopup="true">
-            Servicios
-          </button>
+          <button class="submenu-toggle" aria-expanded="false" aria-haspopup="true">Servicios</button>
           <ul class="submenu">
             <li><a href="/terapia-individual">Terapia individual</a></li>
             <li><a href="/terapia-online">Terapia online</a></li>
@@ -44,11 +37,25 @@
     </div>
   </nav>
 
-  <main>
-    <p class="big-greeting">hola</p>
+  <main class="wrap">
+    <section class="card">
+      <p class="big-greeting">hola</p>
+
+      <!-- H1 semántico para SEO (oculto visualmente, accesible) -->
+      <h1 class="sr-only">Psicóloga en Santiago de Compostela – Jerusa Villergas</h1>
+
+      <!-- Ejemplo de contenido existente -->
+      <img src="JVL.png" alt="Jerusa Villergas">
+      <p>Psicología y psicoterapia en Santiago de Compostela. Atención presencial y online.</p>
+      <p><a class="btn" href="/contacto">Pedir cita</a></p>
+    </section>
   </main>
 
-  <!-- JS externo -->
-  <script src="js/menu.js"></script>
+  <footer>
+    © <span id="y"></span> Jerusa Villergas
+  </footer>
+
+  <script src="menu.js"></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
