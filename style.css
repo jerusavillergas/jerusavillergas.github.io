@@ -121,6 +121,7 @@ footer p {
   margin: 0 0 1rem;
   color: #333;
   line-height: 1.6;
+  text-align: justify;
 }
 
 /* Versión móvil */
