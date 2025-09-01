@@ -1,4 +1,4 @@
-/* Variables y base */
+/* BASE */
 :root { --max: 740px; }
 html, body { height: 100%; margin: 0; }
 body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.5; background:#fff; color:#111; }
@@ -35,7 +35,7 @@ footer p {
   text-align: inherit;      
 }
 
-/* Utilidad accesible (para H1 oculto y texto solo-lectores) */
+/* para H1 oculto y texto solo-lectores */
 .sr-only {
   position: absolute;
   width: 1px; height: 1px;
@@ -44,7 +44,7 @@ footer p {
   border: 0; white-space: nowrap;
 }
 
-/* saludo grande */
+/* saludo grande sin ser encabezado */
 .big-greeting { font-size: 3rem; font-weight: 700; margin: 1.5rem 0 1rem; }
 
 /* ===== Navegación superior ===== */
