@@ -93,3 +93,42 @@ footer p {
   .submenu { position: static; border: none; margin: 0; padding: 0; display: none; }
   .submenu.show { display: block; }
 }
+
+
+/* ===== Layout de entradas ===== */
+.entrada {
+  max-width: var(--max);
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 0 1rem;
+  align-items: start;
+}
+
+.entrada__media img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+.entrada__texto h1 {
+  margin-top: 0;
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.5rem);
+}
+
+.entrada__texto p {
+  margin: 0 0 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Versión móvil */
+@media (max-width: 800px) {
+  .entrada {
+    grid-template-columns: 1fr;
+  }
+  .entrada__media {
+    margin-bottom: 1rem;
+  }
+}
