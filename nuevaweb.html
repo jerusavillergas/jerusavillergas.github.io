@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Web Minimalista</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+      background-color: #faf9f7;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      font-family: 'Merriweather', serif;
+      color: #2e2d29;
+    }
+
+    .hero {
+      background-color: #e9e6df;
+      text-align: center;
+      padding: 8rem 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .navbar {
+      background: #f6f4f1;
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #444;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #7a6c57;
+    }
+
+    .section {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .section p {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .footer {
+      background: #e9e6df;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 4rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Psicología y Bienestar</h1>
+      <p>Un espacio para la reflexión y el acompañamiento</p>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#quien">Quién soy</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section id="quien" class="section">
+    <h2>Quién soy</h2>
+    <p>Breve presentación sobre tu trabajo, enfoque y experiencia.</p>
+  </section>
+
+  <section id="servicios" class="section">
+    <h2>Servicios</h2>
+    <p>Listado de terapias, talleres o acompañamientos que ofreces.</p>
+  </section>
+
+  <section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <p>Incluye correo electrónico, teléfono o un formulario externo.</p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Tu Nombre</p>
+  </footer>
+</body>
+</html>
