@@ -381,11 +381,6 @@ footer {
     font-size: 1rem;
 }
 
-.seccion-clara {
-    background-color: var(--color-fondo); /* Fondo Beige Arena */
-    color: var(--color-texto);
-}
-
 
 /* ======================================================= */
 /* MEDIA QUERIES PARA MÓVILES                */
