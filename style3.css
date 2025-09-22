@@ -2,7 +2,8 @@
 
 /* Variables para la paleta de colores */
 :root {
-  --color-principal: #00568C; /* Azul marino */
+  /* --color-principal: #00568C; Azul marino */
+  --color-principal: #15615C; /* Verde oscuro */
   --color-secundario:  #7D4C4C; /* Marrón Roca Cálido */
   --color-acento: #4CA7B3; /* Turquesa profundo */
   --color-fondo: #F5F5DC; /* Beige Arena */
