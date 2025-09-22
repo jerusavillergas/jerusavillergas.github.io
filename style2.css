@@ -238,10 +238,10 @@ section {
 }
 
 .ficha-imagen img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
-    border-radius: 20%; /*el grado de redondeo de la imagen, 50% la hace redonda*/
+    border-radius: 25%; /*el grado de redondeo de la imagen, 50% la hace redonda*/
     border: 8px solid var(--color-fondo);
 }
 
