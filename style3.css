@@ -660,8 +660,8 @@ footer {
 }
 
 .icono-circulo i {
-    color: var(--color-fondo);
-    font-size: 1.5rem;
+    color: var(--color-secundario);
+    font-size: 3rem; /* 1.5 */
 }
 
 .info-item h3 {
