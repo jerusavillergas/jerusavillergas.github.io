@@ -241,7 +241,7 @@ section {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border-radius: 25%; /*el grado de redondeo de la imagen, 50% la hace redonda*/
+    border-radius: 10%; /*el grado de redondeo de la imagen, 50% la hace redonda*/
     border: 8px solid var(--color-fondo);
 }
 
