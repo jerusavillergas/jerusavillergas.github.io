@@ -11,6 +11,8 @@
 html, body {
     overflow-x: hidden; /* Evita el scroll horizontal */
     width: 100%; /* Asegura que no haya desbordamiento */
+    -webkit-text-size-adjust: 100%; /* Evita que Safari y Chrome ajusten el tamaño del texto */
+    text-size-adjust: 100%;
 }
 
 body {
@@ -53,6 +55,7 @@ h2 {
   background-color: var(--color-principal);
   padding: 15px 0;
   color: #ffffff;
+  position: relative; /* Necesario para el posicionamiento absoluto del menú */
 }
 
 .navbar .contenedor {
@@ -85,6 +88,7 @@ h2 {
   transition: color 0.3s ease;
   font-weight: 600;
   font-size: 1rem;
+  white-space: nowrap; /* Evita que los enlaces de escritorio se rompan */
 }
 
 .navbar nav a:hover {
@@ -97,10 +101,9 @@ h2 {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0;
+    padding: 10px; /* Aumenta el área de clic */
     z-index: 1001;
-    color: white; /* Color del icono de hamburguesa */
-    font-size: 1.8rem; /* Tamaño del icono si fuera texto */
+    -webkit-tap-highlight-color: transparent; /* Elimina el resalte al tocar en móvil */
 }
 
 /* Estilo para el icono de hamburguesa (las 3 líneas) */
@@ -204,7 +207,7 @@ section {
 
 .servicios-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Mantiene el comportamiento de grid por defecto */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     text-align: center;
 }
@@ -277,58 +280,173 @@ footer {
 }
 
 /* ======================================================= */
+/* ESTILOS PARA EL ACORDEÓN (FAQ)                          */
+/* ======================================================= */
+.seccion-faq {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.acordeon {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que las esquinas redondeadas se vean bien */
+}
+
+.acordeon-item {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.acordeon-item:last-child {
+    border-bottom: none; /* Elimina el borde inferior del último ítem */
+}
+
+.acordeon-titulo {
+    background-color: var(--color-fondo);
+    color: var(--color-principal);
+    padding: 18px 25px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.15rem;
+    font-weight: 600;
+    display: flex; /* Para alinear texto e icono */
+    justify-content: space-between; /* Espacia el texto del icono */
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.acordeon-titulo:hover {
+    background-color: #e9e9e9;
+}
+
+/* Estilo del icono de expansión/plegado */
+.icono-acordeon {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.icono-acordeon::before,
+.icono-acordeon::after {
+    content: '';
+    position: absolute;
+    background-color: var(--color-principal);
+    transition: transform 0.3s ease;
+}
+
+.icono-acordeon::before {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: translateY(-50%);
+}
+
+.icono-acordeon::after {
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    transform: translateX(-50%);
+}
+
+/* Rotación del icono cuando el acordeón está activo (abierto) */
+.acordeon-titulo.active .icono-acordeon::after {
+    transform: translateX(-50%) rotate(90deg); /* La línea vertical se "fusiona" */
+}
+
+.acordeon-contenido {
+    background-color: #ffffff;
+    padding: 0 25px; /* Padding horizontal, vertical 0 al inicio */
+    max-height: 0; /* Oculto por defecto */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Transición suave */
+}
+
+.acordeon-contenido.active {
+    max-height: 200px; /* Altura máxima para mostrar el contenido. Ajusta si necesitas más. */
+    padding: 15px 25px; /* Padding al mostrar el contenido */
+}
+
+.acordeon-contenido p {
+    margin: 0; /* Elimina el margen por defecto del párrafo dentro del acordeón */
+    padding-bottom: 10px; /* Espacio debajo del texto */
+    color: var(--color-texto);
+    font-size: 1rem;
+}
+
+
+/* ======================================================= */
 /* MEDIA QUERIES PARA MÓVILES                */
 /* ======================================================= */
 @media (max-width: 767px) {
     /* Contenedor general en móviles */
     .contenedor {
-        padding: 0 15px; /* Ajusta el padding para móviles */
+        padding: 0 15px;
     }
 
     /* Navbar y Menú */
+    .navbar {
+        min-height: 70px;
+        padding: 10px 0;
+    }
+
     .navbar .contenedor {
-        flex-direction: row; /* Mantener logo y toggle en fila */
-        justify-content: space-between; /* Espaciar logo y toggle */
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        flex-wrap: nowrap; /* Evitar saltos de línea */
+        flex-wrap: nowrap;
+        height: auto;
     }
 
     .menu-toggle {
-        display: block; /* Mostrar el botón de hamburguesa en móvil */
-        order: 2; /* Asegurar que el botón esté a la derecha */
-        margin-left: auto; /* Empuja el botón a la derecha */
+        display: block !important;
+        order: 2;
+        margin-left: auto;
     }
 
     .navbar .logo {
-        order: 1; /* Asegurar que el logo esté a la izquierda */
-        margin-right: 15px; /* Espacio entre logo y botón (si hay) */
+        order: 1;
+        margin-right: 15px;
+    }
+    .navbar .logo img {
+        height: 35px;
     }
 
     .navbar nav {
-        display: none; /* Oculta la navegación por defecto en móvil */
+        display: none !important;
         flex-direction: column;
         width: 100%;
         background-color: var(--color-principal);
         position: absolute;
-        top: 70px; /* Ajusta según la altura de tu navbar */
+        top: 70px;
         left: 0;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        z-index: 1000;
-        text-align: center; /* Centra los enlaces del menú */
+        z-index: 999;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+        padding-bottom: 20px;
     }
 
-    /* Mostrar la navegación cuando tenga la clase 'active' */
     .navbar nav.active {
-        display: flex !important; /* Fuerza la visualización del menú */
+        display: flex !important;
     }
 
     .navbar nav a {
         padding: 15px 20px;
-        font-size: 1.1rem !important; /* Fuerza el tamaño de fuente para el menú */
+        font-size: 1.1rem !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        display: block; /* Asegura que cada enlace ocupe su propia línea */
-        width: 100%; /* Ocupa todo el ancho */
-        box-sizing: border-box; /* Incluye padding en el ancho */
+        display: block !important;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        white-space: normal;
     }
     
     .navbar nav a:last-child {
@@ -336,9 +454,9 @@ footer {
     }
 
     .navbar .boton {
-        display: block; /* El botón de contacto dentro del menú también a 100% de ancho */
-        margin: 15px auto; /* Centrar el botón y darle espacio */
-        width: calc(100% - 40px); /* Ajustar el ancho para padding */
+        display: block !important;
+        margin: 15px auto;
+        width: calc(100% - 40px);
     }
 
     /* Títulos y Párrafos Generales en Móvil */
@@ -357,7 +475,7 @@ footer {
 
     /* Sección de Servicios */
     .servicios-grid {
-        grid-template-columns: 1fr !important; /* Cada servicio ocupa una fila completa */
+        grid-template-columns: 1fr !important;
     }
     
     .servicio {
@@ -366,13 +484,13 @@ footer {
 
     /* Sección Sobre Mí */
     .sobre-mi-ficha {
-        flex-direction: column !important; /* Fuerza a apilar la imagen y el texto */
+        flex-direction: column !important;
         padding: 20px;
-        text-align: center !important; /* Centra todo el contenido de la ficha */
+        text-align: center !important;
     }
     .ficha-imagen {
         margin-right: 0 !important;
-        margin-bottom: 20px !important; /* Espacio debajo de la imagen */
+        margin-bottom: 20px !important;
     }
     .ficha-imagen img {
         width: 150px !important;
@@ -382,7 +500,7 @@ footer {
         font-size: 1.5rem !important;
     }
     .ficha-contenido p {
-        font-size: 1rem !important; /* Texto de la ficha un poco más grande y legible */
+        font-size: 1rem !important;
     }
 
     /* Sección de Contacto */
@@ -395,5 +513,17 @@ footer {
     }
     #contacto div {
         text-align: center !important;
+    }
+
+    /* Ajustes específicos para el acordeón en móviles */
+    .acordeon-titulo {
+        font-size: 1rem; /* Un poco más pequeño en móvil para preguntas largas */
+        padding: 15px 20px;
+    }
+    .acordeon-contenido p {
+        font-size: 0.95rem; /* Texto de la respuesta más pequeño */
+    }
+    .acordeon-contenido.active {
+        padding: 10px 20px; /* Ajusta el padding en móvil */
     }
 }
