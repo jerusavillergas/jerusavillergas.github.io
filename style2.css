@@ -1,10 +1,19 @@
-/* Variables para la paleta de colores */
+/* Variables para la paleta de colores inicial
 :root {
   --color-principal: #1f364d; /* Azul marino oscuro */
   --color-secundario: #c25b39; /* Naranja quemado/terracota */
   --color-acento: #5c6b48; /* Verde oliva */
   --color-fondo: #f5f5f5; /* Gris claro o blanco roto */
   --color-texto: #333333; /* Gris oscuro para el texto */
+} */
+
+/* Variables para la paleta de colores */
+:root {
+  --color-principal: #008B8B; /* Turquesa Profundo */
+  --color-secundario: #A52A2A; /* Marrón Roca Cálido */
+  --color-acento: #3CB371; /* Verde Marino */
+  --color-fondo: #F5F5DC; /* Beige Arena */
+  --color-texto: #333333; /* Gris oscuro para el texto (sin cambios, ya que no se proporcionó un nuevo color para el texto principal) */
 }
 
 /* Estilos generales del cuerpo */
