@@ -1,8 +1,8 @@
 /* Variables para la paleta de colores */
 :root {
-  --color-principal: #008B8B; /* Turquesa Profundo */
-  --color-secundario: #A52A2A; /* Marrón Roca Cálido */
-  --color-acento: #3CB371; /* Verde Marino */
+  --color-principal: #00568C; /* Turquesa Profundo */
+  --color-secundario: #7D4C4C; /* Marrón Roca Cálido */
+  --color-acento: #4CA7B3; /* Verde Marino */
   --color-fondo: #F5F5DC; /* Beige Arena */
   --color-texto: #333333; /* Gris oscuro para el texto */
 }
