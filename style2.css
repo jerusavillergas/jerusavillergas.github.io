@@ -284,15 +284,16 @@ footer {
 /* ======================================================= */
 .seccion-faq {
     background-color: #ffffff;
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
 .acordeon {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     border: 1px solid #e0e0e0;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden; /* Asegura que las esquinas redondeadas se vean bien */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .acordeon-item {
@@ -306,13 +307,13 @@ footer {
 .acordeon-titulo {
     background-color: var(--color-fondo);
     color: var(--color-principal);
-    padding: 18px 25px;
+    padding: 20px 30px;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: 600;
     display: flex; /* Para alinear texto e icono */
     justify-content: space-between; /* Espacia el texto del icono */
@@ -326,10 +327,10 @@ footer {
 
 /* Estilo del icono de expansión/plegado */
 .icono-acordeon {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     position: relative;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .icono-acordeon::before,
@@ -363,22 +364,22 @@ footer {
 
 .acordeon-contenido {
     background-color: #ffffff;
-    padding: 0 25px; /* Padding horizontal, vertical 0 al inicio */
+    padding: 0 30px; /* Padding horizontal, vertical 0 al inicio */
     max-height: 0; /* Oculto por defecto */
     overflow: hidden;
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Transición suave */
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out; /* Transición suave */
 }
 
 .acordeon-contenido.active {
-    max-height: 200px; /* Altura máxima para mostrar el contenido. Ajusta si necesitas más. */
-    padding: 15px 25px; /* Padding al mostrar el contenido */
+    max-height: 500px; /* Altura máxima para mostrar el contenido. Ajusta si necesitas más. */
+    padding: 20px 30px; /* Padding al mostrar el contenido */
 }
 
 .acordeon-contenido p {
     margin: 0; /* Elimina el margen por defecto del párrafo dentro del acordeón */
     padding-bottom: 10px; /* Espacio debajo del texto */
     color: var(--color-texto);
-    font-size: 1rem;
+    font-size: 1.05rem;
 }
 
 
@@ -461,18 +462,24 @@ footer {
 
     /* Títulos y Párrafos Generales en Móvil */
     h1 {
-        font-size: 2rem !important;
+        font-size: 2.2rem !important;
     }
     
     h2 {
-        font-size: 1.6rem !important;
+        font-size: 1.8rem !important;
+    }
+    h3 {
+        font-size: 1.4rem !important;
     }
 
     .hero p {
-        font-size: 1rem !important;
+        font-size: 1.15rem !important;
         margin: 15px auto 30px;
     }
-
+    body {
+        font-size: 1rem; /* Tamaño base del texto en móvil */
+    }
+  
     /* Sección de Servicios */
     .servicios-grid {
         grid-template-columns: 1fr !important;
@@ -480,24 +487,25 @@ footer {
     
     .servicio {
         margin-bottom: 20px;
+        padding: 25px;
     }
 
     /* Sección Sobre Mí */
     .sobre-mi-ficha {
         flex-direction: column !important;
-        padding: 20px;
+        padding: 30px;
         text-align: center !important;
     }
     .ficha-imagen {
         margin-right: 0 !important;
-        margin-bottom: 20px !important;
+        margin-bottom: 25px !important;
     }
     .ficha-imagen img {
-        width: 150px !important;
-        height: 150px !important;
+        width: 180px !important;
+        height: 180px !important;
     }
     .ficha-contenido h3 {
-        font-size: 1.5rem !important;
+        font-size: 1.6rem !important;
     }
     .ficha-contenido p {
         font-size: 1rem !important;
@@ -517,13 +525,16 @@ footer {
 
     /* Ajustes específicos para el acordeón en móviles */
     .acordeon-titulo {
-        font-size: 1rem; /* Un poco más pequeño en móvil para preguntas largas */
+        font-size: 1.05rem; /* Un poco más pequeño en móvil para preguntas largas */
         padding: 15px 20px;
     }
     .acordeon-contenido p {
         font-size: 0.95rem; /* Texto de la respuesta más pequeño */
     }
     .acordeon-contenido.active {
-        padding: 10px 20px; /* Ajusta el padding en móvil */
+        padding: 15px 20px; /* Ajusta el padding en móvil */
+    }
+   .acordeon {
+        border-radius: 8px; /* Bordes menos redondeados en móvil */
     }
 }
