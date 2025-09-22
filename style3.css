@@ -652,6 +652,14 @@ footer {
     min-height: 350px;
 }
 
+/* Estilos para los iconos de contacto */
+.contacto-detalles .icon {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    color: var(--color-principal); /* Color del icono, usando tu variable principal */
+    font-size: 1.2rem; /* Tamaño del icono */
+    vertical-align: middle; /* Alineación vertical con el texto */
+}
+
 /* Media Query para móviles (apila las columnas) */
 @media (max-width: 767px) {
     .contacto-flex {
