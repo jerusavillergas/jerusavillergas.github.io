@@ -315,6 +315,10 @@ section {
 }
 
 /* Sección de Contacto */
+
+#contacto div {
+        text-align: center !important;
+    }
 #contacto h2 {
     color: var(--color-principal); /* Título de contacto en Turquesa Profundo */
 }
