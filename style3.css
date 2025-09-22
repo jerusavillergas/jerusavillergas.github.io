@@ -302,11 +302,11 @@ section {
 }
 
 .ficha-imagen img {
-    width: 220px; /* Imagen un poco más grande */
+    width: 220px;
     height: 220px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid var(--color-fondo); /* Borde más prominente */
+    border: 2px solid var(--color-fondo); 
 }
 
 .ficha-contenido {
