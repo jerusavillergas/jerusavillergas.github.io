@@ -20,7 +20,8 @@ html, body {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
   color: var(--color-texto);
   background-color: var(--color-fondo);
   line-height: 1.65; /* Ligeramente más espaciado para mejor legibilidad */
