@@ -13,7 +13,7 @@
   --color-secundario: #A52A2A; /* Marrón Roca Cálido */
   --color-acento: #3CB371; /* Verde Marino */
   --color-fondo: #F5F5DC; /* Beige Arena */
-  --color-texto: #333333; /* Gris oscuro para el texto (sin cambios, ya que no se proporcionó un nuevo color para el texto principal) */
+  --color-texto: #333333; /* Gris oscuro para el texto */
 }
 
 /* Estilos generales del cuerpo */
