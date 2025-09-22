@@ -211,6 +211,7 @@ a:hover {
   letter-spacing: 1px;
   transition: background-color 0.3s ease;
   font-size: 1rem;
+  align: center;
 }
 
 .boton:hover {
