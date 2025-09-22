@@ -307,7 +307,7 @@ section {
     object-fit: cover;
     border-radius: 50%;
    /*border: 2px solid var(--color-fondo); */
-    border: 2px solid black; 
+    border: 2px solid #00000; 
 }
 
 .ficha-contenido {
