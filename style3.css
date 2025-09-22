@@ -306,7 +306,7 @@ section {
     height: 220px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid var(--color-acento); /* Borde más prominente */
+    border: 5px solid var(--color-fondo); /* Borde más prominente */
 }
 
 .ficha-contenido {
