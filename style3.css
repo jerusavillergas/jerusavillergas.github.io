@@ -20,8 +20,9 @@ html, body {
 }
 
 body {
-  /*font-family: 'Montserrat', sans-serif;*/
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 400; /* Aseguramos un peso ligero para el texto principal */
+  /* ... */
   color: var(--color-texto);
   background-color: var(--color-fondo);
   line-height: 1.65; /* Ligeramente más espaciado para mejor legibilidad */
@@ -41,6 +42,7 @@ body {
 
 /* Encabezados y títulos */
 h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif; /* Playfair Display para los títulos */
   color: var(--color-principal);
   font-weight: 700;
   line-height: 1.2;
