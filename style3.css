@@ -680,7 +680,32 @@ footer {
     font-size: 1rem;
     color: var(--color-texto);
 }
+/* Estilos para los enlaces de contacto */
+.info-item .info-link {
+    text-decoration: none; /* Eliminar el subrayado por defecto de los enlaces */
+    color: inherit; /* Hereda el color del texto de su padre */
+    display: flex; /* Asegura que el enlace ocupe todo el espacio del item y mantenga el layout flex */
+    align-items: center; /* Alinea los elementos verticalmente */
+    gap: 20px; /* Espacio entre el icono-circulo y el texto */
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+    padding: 10px; /* Un poco de padding para hacer el área clicable más grande */
+    margin: -10px; /* Compensa el padding para no afectar el margin-bottom del info-item */
+    border-radius: 8px; /* Pequeño borde redondeado al área clicable */
+}
 
+.info-item .info-link:hover {
+    background-color: rgba(0, 0, 0, 0.03); /* Un fondo sutil al pasar el ratón */
+    cursor: pointer;
+}
+
+/* Asegurarse de que los estilos de texto dentro del enlace se mantengan */
+.info-item .info-link h3 {
+    color: var(--color-principal); /* Mantener el color del título */
+}
+
+.info-item .info-link p {
+    color: var(--color-texto); /* Mantener el color del párrafo */
+}
 /* Media Query para móviles (apila las columnas) */
 @media (max-width: 767px) {
     .contacto-info {
@@ -698,5 +723,10 @@ footer {
     
     .info-item h3, .info-item p {
         text-align: center;
+    }
+   .info-item .info-link {
+        flex-direction: column; /* Apilar icono y texto en móvil */
+        text-align: center;
+        gap: 10px; /* Ajusta el espacio */
     }
 }
