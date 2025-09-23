@@ -616,6 +616,9 @@ footer {
     text-align: center;
     margin-bottom: 40px;
 }
+#contacto2 p {
+      text-align: center;
+}
 
 .contacto-flex {
     display: flex;
@@ -650,7 +653,7 @@ footer {
 }
 
 .icono-circulo {
-    background-color: var(--color-principal);
+    background-color: var(--color-acento);
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -661,8 +664,8 @@ footer {
 }
 
 .icono-circulo i {
-    color: var(--color-secundario);
-    font-size: 3rem; /* 1.5 */
+    color: var(--color-blanco-espuma);
+    font-size: 2rem; /* 1.5 */
 }
 
 .info-item h3 {
