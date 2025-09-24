@@ -514,11 +514,11 @@ footer {
 
 
 /* ======================================================= */
-/* ESTILOS PARA LA NUEVA SECCIÓN DE CONTACTO (contacto2)   */
+/* ESTILOS PARA LA NUEVA SECCIÓN DE CONTACTO  */
 /* ======================================================= */
 
 /* El h2 ya tiene estilos globales, ajustamos solo el margen si es necesario */
-#contacto2 h2 {
+#contacto h2 {
     /* color: var(--color-principal); /* Redundante si ya está definido globalmente */
     /* text-align: center; /* Redundante si ya está definido globalmente */
     margin-bottom: 40px;
@@ -761,20 +761,7 @@ footer {
         font-size: 1rem; /* No necesita !important */
     }
     
-    /* Sección de Contacto (anterior #contacto) -- ELIMINADA y consolidada en #contacto2 */
-    /* #contacto h2 {
-        color: var(--color-principal);
-    }
-    #contacto p {
-        text-align: center;
-        max-width: 600px;
-        margin: 0 auto 40px;
-    } */
-    /* .boton-contenedor { /* Ya no es necesario con la nueva estructura de #contacto2 */
-    /* text-align: center;
-    } */
-
-    /* Ajustes específicos para el acordeón en móviles */
+   /* Ajustes específicos para el acordeón en móviles */
     .acordeon-titulo {
         font-size: 1.05rem;
         padding: 15px 20px;
@@ -789,7 +776,7 @@ footer {
         border-radius: 8px; /* Bordes menos redondeados en móvil */
     }
 
-    /* Media Query para la nueva sección de contacto (contacto2) */
+    /* Media Query para la nueva sección de contacto */
     .contacto-info {
         text-align: center;
         width: 100%;
