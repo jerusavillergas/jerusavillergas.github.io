@@ -290,7 +290,7 @@ section {
 }
 
 .imagen-santiago {
-    max-width: 100%; /* La imagen ocupará el 100% del ancho de su contenedor (el fondo blanco) */
+    max-width: 50%; /* La imagen ocupará el 100% del ancho de su contenedor (el fondo blanco) */
     height: auto; /* Mantiene la proporción de la imagen */
     display: block; /* Importante para evitar espacios extra y para centrar si fuera necesario */
 }
