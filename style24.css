@@ -219,7 +219,7 @@ a:hover {
 
 /* Secciones de contenido */
 section {
-    padding: 80px 0; /* Más padding vertical para todas las secciones */
+    padding: 50px 0; /* espacio vertical entre secciones */
 }
 
 /* Estilos de sección alternos */
