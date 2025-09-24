@@ -281,11 +281,11 @@ section {
 .imagen-santiago-contenedor {
     text-align: center; /* Centra la imagen */
     margin: 20px auto 50px auto; /* Espacio y centrado: arriba, derecha/izquierda (auto), abajo, derecha/izquierda (auto) */
-    max-width: 650px; /* Limita el ancho MÁXIMO del contenedor blanco en escritorios */
+    max-width: 800px; /* Limita el ancho MÁXIMO del contenedor blanco en escritorios */
     background-color: var(--color-blanco-espuma); /* Fondo blanco para la "base" de la ilustración */
     padding: 30px; /* Espacio interno alrededor de la imagen dentro del fondo blanco */
     border-radius: 10px; /* Bordes ligeramente redondeados */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para que destaque un poco */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08); /* Sombra suave para que destaque un poco */
     box-sizing: border-box; /* Asegura que el padding no añada ancho extra */
 }
 
@@ -735,23 +735,24 @@ footer {
 
     .imagen-santiago-contenedor {
         margin: 20px auto 30px auto; /* Ajusta márgenes en móvil */
-        padding: 20px; /* Menos padding en móvil */
+        padding: 30px; /* Menos padding en móvil */
+        text-align: center; 
         max-width: calc(100% - 30px); /* Ocupa casi todo el ancho, dejando margen */
     }
 
     /* Sección Sobre Mí */
     .sobre-mi-ficha {
-        flex-direction: column; /* No necesita !important */
+        flex-direction: column; 
         padding: 30px;
-        text-align: center; /* No necesita !important */
+        text-align: center; 
     }
     .ficha-imagen {
-        margin-right: 0; /* No necesita !important */
-        margin-bottom: 25px; /* No necesita !important */
+        margin-right: 0; 
+        margin-bottom: 25px; 
     }
     .ficha-imagen img {
-        width: 180px; /* No necesita !important */
-        height: 180px; /* No necesita !important */
+        width: 180px; 
+        height: 180px; 
     }
     .ficha-contenido h3 {
         font-size: 1.6rem; /* No necesita !important */
