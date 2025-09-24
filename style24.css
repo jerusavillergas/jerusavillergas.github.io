@@ -278,21 +278,22 @@ section {
 }
 
 
-/* Estilos para la imagen de Santiago en la sección de servicios */
 .imagen-santiago-contenedor {
-    text-align: center; /* Centra la imagen dentro de su contenedor */
-    margin-bottom: 50px; /* Espacio debajo de la imagen y antes de los servicios */
-    margin-top: -30px; /* Sube un poco la imagen para reducir el espacio con el h2 */
+    text-align: center; /* Centra la imagen */
+    margin: 20px auto 50px auto; /* Espacio y centrado: arriba, derecha/izquierda (auto), abajo, derecha/izquierda (auto) */
+    max-width: 650px; /* Limita el ancho MÁXIMO del contenedor blanco en escritorios */
+    background-color: var(--color-blanco-espuma); /* Fondo blanco para la "base" de la ilustración */
+    padding: 30px; /* Espacio interno alrededor de la imagen dentro del fondo blanco */
+    border-radius: 10px; /* Bordes ligeramente redondeados */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para que destaque un poco */
+    box-sizing: border-box; /* Asegura que el padding no añada ancho extra */
 }
 
 .imagen-santiago {
-    max-width: 500px; /* Limita el ancho máximo de la imagen */
+    max-width: 100%; /* La imagen ocupará el 100% del ancho de su contenedor (el fondo blanco) */
     height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Para que margin: auto funcione correctamente */
-    margin-left: auto;
-    margin-right: auto;
+    display: block; /* Importante para evitar espacios extra y para centrar si fuera necesario */
 }
-
 
 
 /* Sobre Mí - Ficha */
@@ -733,12 +734,9 @@ footer {
     }
 
     .imagen-santiago-contenedor {
-        margin-bottom: 30px; /* Reduce el margen en móvil */
-        margin-top: -20px;
-    }
-
-    .imagen-santiago {
-        max-width: 90%; /* La imagen puede ser un poco más ancha en móvil si es necesario */
+        margin: 20px auto 30px auto; /* Ajusta márgenes en móvil */
+        padding: 20px; /* Menos padding en móvil */
+        max-width: calc(100% - 30px); /* Ocupa casi todo el ancho, dejando margen */
     }
 
     /* Sección Sobre Mí */
