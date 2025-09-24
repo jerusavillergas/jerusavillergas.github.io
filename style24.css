@@ -277,6 +277,24 @@ section {
     margin-bottom: 0;
 }
 
+
+/* Estilos para la imagen de Santiago en la sección de servicios */
+.imagen-santiago-contenedor {
+    text-align: center; /* Centra la imagen dentro de su contenedor */
+    margin-bottom: 50px; /* Espacio debajo de la imagen y antes de los servicios */
+    margin-top: -30px; /* Sube un poco la imagen para reducir el espacio con el h2 */
+}
+
+.imagen-santiago {
+    max-width: 500px; /* Limita el ancho máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Para que margin: auto funcione correctamente */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
 /* Sobre Mí - Ficha */
 .sobre-mi-ficha {
     display: flex;
@@ -712,6 +730,15 @@ footer {
     .servicio {
         margin-bottom: 25px;
         padding: 25px;
+    }
+
+    .imagen-santiago-contenedor {
+        margin-bottom: 30px; /* Reduce el margen en móvil */
+        margin-top: -20px;
+    }
+
+    .imagen-santiago {
+        max-width: 90%; /* La imagen puede ser un poco más ancha en móvil si es necesario */
     }
 
     /* Sección Sobre Mí */
