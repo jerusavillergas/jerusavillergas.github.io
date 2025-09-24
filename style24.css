@@ -331,7 +331,7 @@ footer {
 }
 
 .pie-logo img {
-    height: 15px; /* Tamaño del logo en el pie de página */
+    height: 60px; /* Tamaño del logo en el pie de página */
     width: auto;
     text-align: left;
 }
