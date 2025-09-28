@@ -301,7 +301,7 @@ section {
 .servicio p {
     font-size: 1rem; /* Texto de servicio */
     margin-bottom: 0;
-    text-align: justify;
+    text-align: left;
 }
 
 
