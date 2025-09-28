@@ -437,8 +437,8 @@ footer {
 }
 
 .acordeon-titulo {
-    background-color: var(--color-blanco-espuma); /* Fondo blanco para las preguntas */
-    color: var(--color-principal); /* Texto de pregunta en Turquesa Profundo */
+    background-color: var(--color-fondo);
+    color: var(--color-acento); /* Texto de pregunta en Turquesa Profundo */
     padding: 20px 30px; /* Más padding */
     width: 100%;
     text-align: left;
