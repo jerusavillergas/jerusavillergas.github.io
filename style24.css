@@ -719,7 +719,7 @@ footer {
     }
 
     .navbar .logo {
-        order: 1;
+        order: 0;                                                      /*--------------------------------- estaba en 1----------*/
         margin-right: 15px;
         text-align: left;
     }
@@ -753,7 +753,7 @@ footer {
         display: block;
         width: 100%;
         box-sizing: border-box;
-        text-align: center;
+        text-align: left;                                                 /*--------------------------------estaba en center----------------------------*/
         white-space: normal;
     }
     
