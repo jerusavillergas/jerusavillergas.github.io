@@ -272,7 +272,7 @@ section {
     background-color: var(--color-secundario); /* Hover en Marrón Roca */
 }
 
-/* Servicios */
+/* -------------- SERVICIOS -----------------------*/
 .servicios-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -301,6 +301,7 @@ section {
 .servicio p {
     font-size: 1rem; /* Texto de servicio */
     margin-bottom: 0;
+    text-align: justify;
 }
 
 
