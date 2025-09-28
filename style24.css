@@ -109,15 +109,16 @@ p {
 }
 
 .numero-telefono-header i {
+    color: var(--color-blanco-espuma);
     font-size: 1.2rem; /* Tamaño del icono de teléfono */
 }
 
 /* Logotipo */
 .logo a {
     text-decoration: none;
-    font-size: 1.5rem; /* Este estilo es redundante si tienes una imagen */
-    font-weight: 700; /* Este estilo es redundante si tienes una imagen */
-    color: var(--color-blanco-espuma); /* Este estilo es redundante si tienes una imagen */
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    color: var(--color-blanco-espuma); /* Este estilo es redundante si logo es imagen */
     display: flex;
     align-items: center;
 }
