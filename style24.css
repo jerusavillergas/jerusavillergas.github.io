@@ -561,18 +561,16 @@ footer {
 }
 
 
-.contacto-flex {
+.contacto-info {
     display: flex;
+    flex: 1;
+    min-width: 300px
     justify-content: space-between;
     gap: 40px;
     flex-wrap: wrap; /* Permite que las columnas se envuelvan en pantallas pequeñas */
     margin-top: 40px; /* Espacio entre el subtítulo y el contenido flex */
 }
 
-.contacto-info {
-    flex: 1;
-    min-width: 300px;
-}
 
 .contacto-mapa {
     flex: 1;
