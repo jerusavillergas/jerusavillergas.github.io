@@ -707,13 +707,13 @@ footer {
     .navbar .contenedor {
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: left;                                            /* ----------------------------estaba en center --------------*/
         flex-wrap: nowrap;
         height: auto;
     }
 
     .menu-toggle {
-        display: block; /* No necesita !important, ya está oculto en desktop */
+        display: block; 
         order: 2;
         margin-left: auto;
     }
@@ -724,11 +724,11 @@ footer {
         text-align: left;
     }
     .navbar .logo img {
-        height: 35px;
+        height: 40px;
     }
 
     .navbar nav {
-        display: none; /* No necesita !important, ya está oculto en desktop */
+        display: none; 
         flex-direction: column;
         width: 100%;
         background-color: var(--color-principal);
