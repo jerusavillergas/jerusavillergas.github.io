@@ -327,7 +327,7 @@ section {
 }
 
 .ficha-contenido h3 {
-    color: var(--color-principal);
+    color: var(--color-acento);
     margin-top: 0;
     font-size: 1.8rem;
 }
@@ -725,7 +725,7 @@ footer {
 
     /* Sección de Servicios */
     .servicios-grid {
-        grid-template-columns: 1fr; /* No necesita !important */
+        grid-template-columns: 1fr; 
     }
     
     .servicio {
@@ -755,6 +755,7 @@ footer {
         height: 180px; 
     }
     .ficha-contenido h3 {
+        color:
         font-size: 1.6rem; /* No necesita !important */
     }
     .ficha-contenido p {
