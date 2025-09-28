@@ -77,11 +77,39 @@ p {
     position: relative;
 }
 
-.navbar .contenedor {
+.header-contenido { 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Espacia logo+teléfono del menú/botón */
     align-items: center;
-    flex-wrap: nowrap;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Agrupa logo y teléfono para que Flexbox los trate como un solo elemento en el espacio */
+.logo-y-telefono {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio entre el logo y el número de teléfono */
+}
+.numero-telefono-header a {
+    color: var(--color-texto); /* Color del texto del teléfono */
+    text-decoration: none;
+    font-size: 1.1rem; /* Tamaño del texto del teléfono */
+    font-weight: 500;
+    transition: color 0.3s ease;
+    white-space: nowrap; /* Evita que el número se rompa en varias líneas */
+    display: flex; /* Para alinear el icono y el texto */
+    align-items: center;
+    gap: 8px; /* Espacio entre el icono y el texto del número */
+}
+
+.numero-telefono-header a:hover {
+    color: var(--color-acento); /* Color al pasar el ratón */
+}
+
+.numero-telefono-header i {
+    font-size: 1.2rem; /* Tamaño del icono de teléfono */
 }
 
 /* Logotipo */
@@ -840,5 +868,13 @@ footer {
 
     .politica-privacidad-contenido p {
         text-align: left; /* En móvil, mejor alineado a la izquierda */
+    }
+    .numero-telefono-header {
+        display: none; /* Oculta el número de teléfono en móviles */
+    }
+
+    /* Ajustes si el logo queda muy grande en móvil */
+    .logo img {
+        height: 40px; /* Reduce un poco el tamaño del logo en móviles si es necesario */
     }
 }
