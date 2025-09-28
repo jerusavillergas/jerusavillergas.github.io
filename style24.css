@@ -624,6 +624,36 @@ footer {
 
 
 /* ======================================================= */
+/* ESTILOS PARA LA POLÍTICA DE PRIVACIDAD                  */
+/* ======================================================= */
+
+.politica-privacidad-contenido p,
+.politica-privacidad-contenido ul li { 
+    font-size: 0.8rem; 
+    line-height: 1.7; 
+}
+.politica-privacidad-contenido p {
+    text-align: justify;
+    margin-bottom: 1.2em; /* espacio entre párrafos */
+}
+.politica-privacidad-contenido h2 {
+    font-size: 1.5rem; 
+    margin-bottom: 25px; /* margen inferior */
+}
+.politica-privacidad-contenido h3 {
+    font-size: 1.3rem; 
+    margin-bottom: 15px;
+}
+.politica-privacidad-contenido ul {
+    margin-bottom: 1.5em; /* Espacio debajo de la lista */
+    padding-left: 25px; /* Espacio para los puntos de la lista */
+    text-align: left; /* Asegura que las listas no se justifiquen y sean legibles */
+}
+
+
+
+
+/* ======================================================= */
 /* MEDIA QUERIES PARA MÓVILES                              */
 /* ======================================================= */
 @media (max-width: 767px) {
@@ -798,5 +828,9 @@ footer {
         flex-direction: column; /* Apilar icono y texto en móvil */
         text-align: center;
         gap: 10px; /* Ajusta el espacio */
+    }
+
+    .politica-privacidad-contenido p {
+        text-align: left; /* En móvil, mejor alineado a la izquierda */
     }
 }
