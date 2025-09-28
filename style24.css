@@ -638,7 +638,7 @@ footer {
 }
 .politica-privacidad-contenido h1 {
     font-size: 1.7rem; 
-    color: var(--color-acento);
+    color: #4CA7B3;
     margin-bottom: 25px; /* margen inferior */
 }
 .politica-privacidad-contenido h2 {
@@ -711,14 +711,14 @@ footer {
     }
 
     .navbar nav.active {
-        display: flex; /* No necesita !important */
+        display: flex; 
     }
 
     .navbar nav a {
         padding: 15px 20px;
-        font-size: 1.1rem; /* No necesita !important */
+        font-size: 1.1rem; 
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        display: block; /* No necesita !important */
+        display: block;
         width: 100%;
         box-sizing: border-box;
         text-align: center;
@@ -730,27 +730,27 @@ footer {
     }
 
     .navbar .boton {
-        display: block; /* No necesita !important */
+        display: block; 
         margin: 15px auto;
         width: calc(100% - 40px);
     }
 
     /* Títulos y Párrafos Generales en Móvil */
     h1 {
-        font-size: 2.2rem; /* No necesita !important */
+        font-size: 2.2rem;
     }
     
     h2 {
-        font-size: 1.8rem; /* No necesita !important */
+        font-size: 1.8rem; 
         margin-bottom: 40px;
     }
     
     h3 {
-        font-size: 1.4rem; /* No necesita !important */
+        font-size: 1.4rem; 
     }
 
     .hero p {
-        font-size: 1.15rem; /* No necesita !important */
+        font-size: 1.15rem; 
         margin: 15px auto 30px;
     }
     
@@ -790,11 +790,10 @@ footer {
         height: 180px; 
     }
     .ficha-contenido h3 {
-        color:
-        font-size: 1.6rem; /* No necesita !important */
+       font-size: 1.6rem; 
     }
     .ficha-contenido p {
-        font-size: 1rem; /* No necesita !important */
+        font-size: 1rem; 
     }
     
    /* Ajustes específicos para el acordeón en móviles */
