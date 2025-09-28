@@ -93,7 +93,7 @@ p {
     gap: 15px; /* Espacio entre el logo y el número de teléfono */
 }
 .numero-telefono-header a {
-    color: var(--color-texto); /* Color del texto del teléfono */
+    color: var(--color-blanco-espuma); /* Color del texto del teléfono */
     text-decoration: none;
     font-size: 1.1rem; /* Tamaño del texto del teléfono */
     font-weight: 500;
