@@ -1,0 +1,894 @@
+/* Variables para la paleta de colores */
+:root {
+    --color-principal: #15615C; /* Verde oscuro */
+    --color-secundario: #7D4C4C; /* Marrón Roca Cálido */
+    --color-acento: #4CA7B3; /* Turquesa profundo */
+    --color-fondo: #FAFAF5; /* Beige Arena #F5F5DC */ 
+    --color-texto: #333333; /* Gris oscuro para el texto */
+    --color-blanco-espuma: #FFFFFF; /* Blanco Espuma */
+}
+
+/* Estilos generales del BODY */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Aseguramos un peso ligero para el texto principal */
+    color: var(--color-texto);
+    background-color: var(--color-blanco-espuma);
+    line-height: 1.65; /* Ligeramente más espaciado para mejor legibilidad */
+    margin: 0;
+    padding: 0;
+    font-size: 1.125rem; /* Tamaño de fuente base más generoso */
+    letter-spacing: 0.02em; /* Ligero espaciado entre letras */
+}
+
+/* Contenedor principal para centrar el contenido */
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 25px; /* Más padding para 'aire' lateral */
+    box-sizing: border-box;
+}
+
+/* Encabezados y títulos */
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif; /* Playfair Display para los títulos */
+    color: var(--color-principal);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.8em;
+}
+
+h1 {
+    font-size: 3rem; /* Título principal más grande */
+    color: var(--color-blanco-espuma);
+}
+h2 {
+    font-size: 2.2rem; /* Títulos de sección más grandes */
+    text-align: center;
+    margin-bottom: 60px; /* Más espacio debajo de los títulos de sección */
+    color: var(--color-principal);
+}
+h3 {
+    font-size: 1.7rem; /* Títulos de subsección */
+    color: var(--color-acento); /* Usamos el color acento para h3 */
+    margin-bottom: 1rem;
+}
+p {
+    margin-bottom: 1.2em;
+    font-size: 1.125rem;
+}
+
+
+/* ---------------BARRA de Navegación------------------ */
+.navbar {
+    background-color: var(--color-principal);
+    padding: 15px 0;
+    color: var(--color-blanco-espuma);
+    position: relative;
+}
+
+.header-contenido { 
+    display: flex;
+    justify-content: space-between; /* Espacia logo+teléfono del menú/botón */
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Agrupa logo y teléfono */
+.logo-y-telefono {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio entre el logo y el número de teléfono */
+}
+.numero-telefono-header a {
+    color: var(--color-blanco-espuma);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.numero-telefono-header a:hover {
+    color: var(--color-acento);
+}
+
+.numero-telefono-header i {
+    color: var(--color-blanco-espuma);
+    font-size: 1.2rem;
+}
+
+/* Logotipo */
+.logo a {
+    text-decoration: none;
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    color: var(--color-blanco-espuma);
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.navbar nav a {
+    color: var(--color-blanco-espuma);
+    text-decoration: none;
+    padding: 0 18px;
+    transition: color 0.3s ease;
+    font-weight: 600;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.navbar nav a:hover {
+    color: var(--color-acento); 
+}
+
+/* Botón de hamburguesa - Oculto por defecto en escritorio */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-blanco-espuma);
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-blanco-espuma);
+    position: absolute;
+    transition: transform 0.3s ease, top 0.3s ease;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    top: 8px;
+}
+
+/* Animación de la hamburguesa a X */
+.menu-toggle.active .hamburger {
+    background-color: transparent;
+}
+
+.menu-toggle.active .hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.menu-toggle.active .hamburger::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+/* Sección principal (Hero) */
+.hero {
+    background-color: var(--color-acento); /* Usamos color acento para el hero */
+    color: var(--color-blanco-espuma);
+    padding: 100px 0; /* Más padding para el hero */
+    text-align: center;
+}
+
+.hero h1 {
+    margin-top: 0;
+    font-size: 3.5rem; /* H1 más grande en hero */
+}
+
+.hero p {
+    font-size: 1.35rem; /* Texto del hero más grande */
+    max-width: 700px;
+    margin: 25px auto 50px; /* Más espaciado */
+}
+
+/* Elementos de acento: enlaces y botones */
+a {
+    color: var(--color-acento);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-principal); /* Cambiado a color principal para un mejor contraste en hover general */
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco-espuma);
+    padding: 14px 28px; /* Botones más grandes */
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.boton:hover {
+    background-color: var(--color-principal);
+}
+
+/* Secciones de contenido */
+section {
+    padding: 80px 0; /* Aumentado el espacio vertical entre secciones */
+}
+
+/* Estilos de sección alternos */
+.seccion-clara {
+    background-color: var(--color-blanco-espuma); /* Fondo Blanco Espuma */
+    color: var(--color-texto);
+}
+
+.seccion-oscura {
+    background-color: var(--color-acento); /* Fondo color acento */
+    color: var(--color-blanco-espuma); /* Texto Blanco Espuma */
+}
+
+.seccion-oscura h2, .seccion-oscura h3 {
+    color: var(--color-principal); /* Títulos en color principal */
+}
+
+.seccion-oscura .boton {
+    background-color: var(--color-principal); /* Botones en color principal */
+    color: var(--color-blanco-espuma);
+}
+
+.seccion-oscura .boton:hover {
+    background-color: var(--color-secundario); /* Hover en Marrón Roca */
+}
+
+/* -------------- SERVICIOS -----------------------*/
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.servicio {
+    background-color: var(--color-fondo);
+    padding: 35px; /* Más padding en los servicios */
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08); /* Sombra más sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.servicio h3 {
+    margin-bottom: 0.8em;
+    font-size: 1.5rem; /* Título de servicio un poco más grande */
+}
+
+.servicio p {
+    font-size: 1rem; /* Texto de servicio */
+    margin-bottom: 0;
+    text-align: left;
+}
+
+
+.imagen-santiago-contenedor {
+    text-align: center;
+    margin: 20px auto 50px auto;
+    max-width: 800px;
+    background-color: var(--color-blanco-espuma);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+.imagen-santiago {
+    max-width: 50%; /* Corregido: La imagen debe ser un porcentaje de su contenedor (50% está bien para ese estilo) */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Asegura el centrado de la imagen dentro del contenedor */
+}
+
+
+/* Sobre Mí - Ficha */
+.sobre-mi-ficha {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--color-blanco-espuma);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+}
+
+.ficha-imagen {
+    flex-shrink: 0;
+    margin-right: 40px;
+}
+
+.ficha-imagen img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--color-fondo);
+}
+
+.ficha-contenido p {
+    text-align: left;
+}
+
+.ficha-contenido h3 {
+    color: var(--color-acento);
+    margin-top: 0;
+    font-size: 1.8rem;
+    text-align: left; /* Alineación a la izquierda en desktop */
+}
+
+/* Estilos para el pie de página (footer) */
+footer {
+    background-color: var(--color-principal);
+    color: var(--color-fondo);
+    padding: 60px 0 20px;
+    text-align: center;
+}
+
+.pie-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: left;
+}
+
+.pie-logo {
+    min-width: 150px;
+}
+
+.pie-logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+.pie-menu,
+.pie-legal {
+    flex: 1;
+    min-width: 150px;
+}
+
+.pie-menu h4,
+.pie-legal h4 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif; /* Usamos la fuente de los títulos */
+    font-size: 1.3rem;
+}
+
+.pie-menu ul,
+.pie-legal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pie-menu ul li,
+.pie-legal ul li {
+    margin-bottom: 8px;
+}
+
+.pie-menu a,
+.pie-legal a {
+    color: var(--color-fondo);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+}
+
+.pie-menu a:hover,
+.pie-legal a:hover {
+    color: var(--color-acento);
+}
+
+.pie-derechos {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* Media Query para móvil - Footer */
+@media (max-width: 767px) {
+    .pie-contenedor {
+        justify-content: center;
+        text-align: center;
+    }
+    .pie-logo {
+        width: 100%; /* El logo ocupa todo el ancho arriba */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .pie-logo img {
+        margin: 0 auto;
+    }
+    .pie-menu, .pie-legal {
+        min-width: auto;
+        flex: 1 1 45%; /* Permite 2 columnas si caben */
+        text-align: center;
+    }
+}
+
+/* ======================================================= */
+/* ESTILOS PARA EL ACORDEÓN (FAQ)                          */
+/* ======================================================= */
+
+.acordeon {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.acordeon-item {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.acordeon-item:last-child {
+    border-bottom: none;
+}
+
+.acordeon-titulo {
+    background-color: var(--color-fondo);
+    color: var(--color-acento);
+    padding: 20px 30px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.acordeon-titulo:hover {
+    background-color: #f0f0f0;
+}
+
+.icono-acordeon {
+    width: 14px;
+    height: 14px;
+    position: relative;
+    margin-left: 15px;
+}
+
+.icono-acordeon::before,
+.icono-acordeon::after {
+    content: '';
+    position: absolute;
+    background-color: var(--color-principal);
+    transition: transform 0.3s ease;
+}
+
+.icono-acordeon::before {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: translateY(-50%);
+}
+
+.icono-acordeon::after {
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    transform: translateX(-50%);
+}
+
+.acordeon-titulo.active .icono-acordeon::after {
+    transform: translateX(-50%) rotate(90deg);
+}
+
+.acordeon-contenido {
+    background-color: #ffffff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+}
+
+.acordeon-contenido.active {
+    max-height: 500px;
+    padding: 20px 30px;
+}
+
+.acordeon-contenido p {
+    margin: 0;
+    padding-bottom: 10px;
+    color: var(--color-texto);
+    font-size: 1.05rem;
+}
+
+
+/* ======================================================= */
+/* ESTILOS PARA LA NUEVA SECCIÓN DE CONTACTO               */
+/* ======================================================= */
+
+#contacto h2 {
+    margin-bottom: 40px;
+}
+
+.subtitulo-contacto {
+    text-align: center;
+    margin: -30px auto 40px auto;
+    max-width: 600px;
+    font-size: 1.15rem;
+}
+
+
+.contacto-grid { /* Renombrado de contacto-info a contacto-grid para mayor claridad de estructura */
+    display: flex;
+    justify-content: center; /* Centra los bloques en el contenedor */
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.contacto-info { /* Nuevo contenedor para la información y mapa */
+    display: flex;
+    flex: 1 1 45%; /* Permite que cada columna ocupe casi la mitad del espacio */
+    justify-content: space-between;
+    flex-direction: column; /* Apila los elementos de info */
+    gap: 30px;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.contacto-mapa {
+    flex: 1 1 45%;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.contacto-mapa iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-item {
+    margin-bottom: 0; /* Ya no es necesario si el contenedor tiene gap */
+}
+
+.icono-circulo {
+    background-color: var(--color-acento);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.icono-circulo i {
+    color: var(--color-blanco-espuma);
+    font-size: 1.5rem;
+}
+
+.info-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--color-principal);
+    font-weight: 700;
+}
+
+.info-item p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    color: var(--color-texto);
+}
+
+/* Estilos para los enlaces de contacto */
+.info-item .info-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    margin: -10px;
+    border-radius: 8px;
+}
+
+.info-item .info-link:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+}
+
+.info-item .info-link h3 {
+    color: var(--color-principal);
+}
+
+.info-item .info-link p {
+    color: var(--color-texto);
+}
+
+/* ======================================================= */
+/* ESTILOS PARA LA POLÍTICA DE PRIVACIDAD                  */
+/* ======================================================= */
+
+.politica-privacidad-contenido p,
+.politica-privacidad-contenido ul li { 
+    font-size: 0.8rem; 
+    line-height: 1.7; 
+}
+.politica-privacidad-contenido p {
+    text-align: justify;
+    margin-bottom: 1.2em;
+}
+.politica-privacidad-contenido h1 {
+    font-size: 1.7rem; 
+    text-align: left;
+    color: var(--color-acento); /* Usa la variable de color acento */
+    margin-bottom: 25px;
+}
+.politica-privacidad-contenido h2 {
+    font-size: 1.3rem; 
+    text-align: left;
+    margin-bottom: 25px;
+}
+.politica-privacidad-contenido h3 {
+    font-size: 1.3rem; 
+    text-align: left;
+    margin-bottom: 15px;
+}
+.politica-privacidad-contenido ul {
+    margin-bottom: 1.5em;
+    padding-left: 25px;
+    text-align: left;
+}
+
+
+/* ==================================================================================================================== */
+/* ----------------------                       MEDIA QUERIES PARA MÓVILES                      ----------------------*/
+/* ==================================================================================================================== */
+@media (max-width: 900px) {
+    .logo-y-telefono {
+        gap: 10px;
+    }
+    .numero-telefono-header {
+        /* Oculta el teléfono en pantallas medianas si no hay espacio */
+        display: none; 
+    }
+}
+
+
+@media (max-width: 767px) {
+    /* Contenedor general en móviles */
+    .contenedor {
+        padding: 0 15px;
+    }
+
+    /* Navbar y Menú */
+    .navbar {
+        min-height: 65px; /* Altura más compacta */
+        padding: 5px 0;
+    }
+
+    .header-contenido { 
+        padding: 5px 0;
+    }
+    
+    /* El logo-y-telefono ahora solo contiene el logo en móvil */
+    .logo-y-telefono {
+        order: 1;
+        margin-right: 15px;
+    }
+    .numero-telefono-header {
+        display: none; /* Asegura que el teléfono no aparezca en móvil */
+    }
+
+    .menu-toggle {
+        display: block;
+        order: 2;
+        margin-left: auto;
+    }
+
+    .navbar .logo img {
+        height: 40px; /* Tamaño del logo ajustado */
+    }
+
+    .navbar nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--color-principal);
+        position: absolute;
+        top: 65px; /* Ajustado a la nueva altura de navbar */
+        left: 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 999;
+        height: calc(100vh - 65px);
+        overflow-y: auto;
+        padding-bottom: 20px;
+    }
+
+    .navbar nav.active {
+        display: flex; 
+    }
+
+    .navbar nav a {
+        padding: 15px 20px;
+        font-size: 1.1rem; 
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        white-space: normal;
+    }
+    
+    .navbar nav a:last-child {
+        border-bottom: none;
+    }
+
+    .navbar .boton {
+        display: block; 
+        margin: 15px auto;
+        width: calc(100% - 40px);
+    }
+
+    /* Títulos y Párrafos Generales en Móvil */
+    section {
+        padding: 50px 0;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem; 
+        margin-bottom: 40px;
+    }
+    
+    h3 {
+        font-size: 1.4rem; 
+    }
+
+    .hero p {
+        font-size: 1.15rem; 
+        margin: 15px auto 30px;
+    }
+    
+    body {
+        font-size: 1rem;
+    }
+
+    /* Sección de Servicios */
+    .servicios-grid {
+        grid-template-columns: 1fr; 
+    }
+    
+    .servicio {
+        margin-bottom: 25px;
+        padding: 25px;
+    }
+
+    .imagen-santiago-contenedor {
+        margin: 20px auto 30px auto;
+        padding: 20px; /* Menos padding en móvil */
+        max-width: 100%; 
+    }
+    .imagen-santiago {
+        max-width: 70%; /* La imagen se hace un poco más grande en móvil, si se desea */
+    }
+
+    /* Sección Sobre Mí */
+    .sobre-mi-ficha {
+        flex-direction: column; 
+        padding: 30px;
+    }
+    .ficha-imagen {
+        margin-right: 0; 
+        margin-bottom: 25px; 
+    }
+    .ficha-imagen img {
+        width: 180px; 
+        height: 180px; 
+    }
+    .ficha-contenido h3 {
+       font-size: 1.6rem; 
+       text-align: center;
+    }
+    .ficha-contenido p {
+        font-size: 1rem; 
+        text-align: center; /* Centrar el texto en móvil para la ficha */
+    }
+    
+   /* Ajustes específicos para el acordeón en móviles */
+    .acordeon-titulo {
+        font-size: 1.05rem;
+        padding: 15px 20px;
+    }
+    .acordeon-contenido p {
+        font-size: 0.95rem;
+    }
+    .acordeon-contenido.active {
+        padding: 15px 20px;
+    }
+    .acordeon {
+        border-radius: 8px;
+    }
+
+    /* Media Query para la nueva sección de contacto */
+    .contacto-grid {
+        gap: 30px;
+        flex-direction: column; /* Apila la info y el mapa */
+    }
+    .contacto-info, .contacto-mapa {
+        width: 100%;
+        max-width: none; /* Elimina el límite de max-width */
+        flex-basis: auto;
+    }
+    
+    .info-item .info-link {
+        flex-direction: row; /* Mantiene el icono y texto en fila */
+        text-align: left;
+        align-items: center;
+    }
+    
+    .info-item h3, .info-item p {
+        text-align: left; /* Alinea el texto a la izquierda en los bloques de info */
+    }
+
+    /* Política de Privacidad */
+    .politica-privacidad-contenido p {
+        text-align: left; /* Deja el texto alineado a la izquierda para mejor lectura en móvil */
+    }
+}
