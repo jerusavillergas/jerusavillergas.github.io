@@ -3,7 +3,7 @@
     --color-principal: #15615C; /* Verde oscuro */
     --color-secundario: #7D4C4C; /* Marrón Roca Cálido */
     --color-acento: #4CA7B3; /* Turquesa profundo (anteriormente color-azul-agua-clara) */
-    --color-fondo: #F5F5DC; /* Beige Arena */
+    --color-fondo: #FAFAF5; /* Beige Arena #F5F5DC */ 
     --color-texto: #333333; /* Gris oscuro para el texto */
     --color-blanco-espuma: #FFFFFF; /* Blanco Espuma */
 }
