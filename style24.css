@@ -636,8 +636,13 @@ footer {
     text-align: justify;
     margin-bottom: 1.2em; /* espacio entre párrafos */
 }
+.politica-privacidad-contenido h1 {
+    font-size: 1.7rem; 
+    color: var(--color-acento);
+    margin-bottom: 25px; /* margen inferior */
+}
 .politica-privacidad-contenido h2 {
-    font-size: 1.5rem; 
+    font-size: 1.3rem; 
     margin-bottom: 25px; /* margen inferior */
 }
 .politica-privacidad-contenido h3 {
