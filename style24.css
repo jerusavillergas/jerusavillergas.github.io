@@ -20,7 +20,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400; /* Aseguramos un peso ligero para el texto principal */
     color: var(--color-texto);
-    background-color: var(--color-fondo);
+    background-color: var(--color-blanco-espuma);
     line-height: 1.65; /* Ligeramente más espaciado para mejor legibilidad */
     margin: 0;
     padding: 0;
@@ -224,7 +224,7 @@ section {
 
 /* Estilos de sección alternos */
 .seccion-clara {
-    background-color: var(--color-fondo); /* Fondo Beige Arena */
+    background-color: var(--color-blanco-espuma); /* Fondo Beige Arena */
     color: var(--color-texto);
 }
 
@@ -255,7 +255,7 @@ section {
 }
 
 .servicio {
-    background-color: var(--color-blanco-espuma);
+    background-color: var(--color-fondo);
     padding: 35px; /* Más padding en los servicios */
     border-radius: 8px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08); /* Sombra más sutil */
