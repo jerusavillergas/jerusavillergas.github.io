@@ -8,14 +8,13 @@
     --color-blanco-espuma: #FFFFFF; /* Blanco Espuma */
 }
 
-/* Estilos generales del cuerpo */
+/* Estilos generales del BODY */
 html, body {
     overflow-x: hidden;
     width: 100%;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
 }
-
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400; /* Aseguramos un peso ligero para el texto principal */
@@ -50,26 +49,24 @@ h1 {
     font-size: 3rem; /* Título principal más grande */
     color: var(--color-blanco-espuma);
 }
-
 h2 {
     font-size: 2.2rem; /* Títulos de sección más grandes */
     text-align: center;
     margin-bottom: 60px; /* Más espacio debajo de los títulos de sección */
     color: var(--color-principal);
 }
-
 h3 {
     font-size: 1.7rem; /* Títulos de subsección */
     color: var(--color-acento); /* Usamos el color acento para h3 */
     margin-bottom: 1rem;
 }
-
 p {
     margin-bottom: 1.2em;
     font-size: 1.125rem;
 }
 
-/* Navegación */
+
+/* ---------------BARRA de Navegación------------------ */
 .navbar {
     background-color: var(--color-principal);
     padding: 15px 0;
@@ -140,7 +137,7 @@ p {
 }
 
 .navbar nav a:hover {
-    color: var(--color-secundario); /* Marrón roca para acento de hover */
+    color: var(--color-acento); 
 }
 
 /* Botón de hamburguesa - Oculto por defecto en escritorio */
@@ -218,7 +215,7 @@ p {
 
 /* Elementos de acento: enlaces y botones */
 a {
-    color: var(--color-secundario);
+    color: var(--color-acento);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -691,9 +688,9 @@ footer {
 
 
 
-/* ======================================================= */
-/* MEDIA QUERIES PARA MÓVILES                              */
-/* ======================================================= */
+/* ==================================================================================================================== */
+/* ----------------------                            MEDIA QUERIES PARA MÓVILES                   ----------------------*/
+/* ==================================================================================================================== */
 @media (max-width: 767px) {
     /* Contenedor general en móviles */
     .contenedor {
@@ -870,8 +867,8 @@ footer {
     .politica-privacidad-contenido p {
         text-align: left; /* En móvil, mejor alineado a la izquierda */
     }
-    .numero-telefono-header {
-        display: none; /* Oculta el número de teléfono en móviles */
+    /*.numero-telefono-header {
+        display: none; Oculta el número de teléfono en móviles */
     }
 
     /* Ajustes si el logo queda muy grande en móvil */
