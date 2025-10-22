@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso Legal - Jerusa Villergas Psicología</title>
+    <link rel="icon" href="JVL.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style24.css">
+</head>
+<body>
+    <header class="navbar">
+       <div class="contenedor header-contenido"> 
+           <div class="logo-y-telefono"> 
+               <div class="logo">
+                    <a href="/index.html">
+                        <img src="/JVL-blanco-400.png" alt="Logotipo de Jerusa Villergas Psicología">
+                    </a>
+                </div>
+                <div class="numero-telefono-header">
+                    <a href="tel:+34679218356" aria-label="Llamar a Jerusa Villergas">
+                        <i class="fas fa-phone"></i> <span>679 218 356</span> </a>
+                </div>
+               <div class="numero-telefono-header">
+                   <i class="fas fa-sing"></i> <span>Jerusa Villergas</span> </a>
+               </div>
+           </div>
+           
+           <button class="menu-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+           
+           <nav id="main-nav">
+                <a href="#servicios">Servicios</a>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#contacto" class="boton">Contacto</a>
+                <a href="#faq">Dudas</a>
+           </nav>
+       </div>
+    </header>
+
+    <main>
+        <section class="seccion-clara">
+            <div class="contenedor">
+                
+                <h1>AVISO LEGAL</h1>
+                <p><strong>Última actualización:</strong> 22 de octubre de 2025</p>
+                <p>En cumplimiento de lo establecido en el Art. 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI-CE), se informa a la persona usuaria de lo siguiente:</p>
+
+                <section id="datos-titular">
+                    <h2>1. Datos del Titular del Sitio Web</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Concepto</th>
+                                <th>Detalle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Razón Social</strong></td>
+                                <td>Jerusa Villergas López</td>
+                            </tr>
+                            <tr>
+                                <td><strong>NIF</strong></td>
+                                <td>45097673D</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dirección</strong></td>
+                                <td>Avda. Romero Donallo, 17 . Ent. B. - Santiago de Compostela (15706 – A Coruña)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Teléfono</strong></td>
+                                <td>679218356</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Correo Electrónico</strong></td>
+                                <td>jerusavillergas@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sitio Web</strong></td>
+                                <td>https://www.jerusavillergas.com/</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section id="condiciones-uso">
+                    <h2>2. Objeto y Aceptación de las Condiciones de Uso</h2>
+                    <p>El presente Aviso Legal regula el acceso y la utilización de la página web <code>https://www.jerusavillergas.com/</code> que Jerusa Villergas López pone a disposición de las personas usuarias de Internet.</p>
+                    <p>Se entiende por <strong>persona usuaria</strong> aquella que acceda, navegue, utilice o participe en los servicios y actividades de la Web.</p>
+                    <p>La utilización del sitio web atribuye la condición de persona usuaria e implica el conocimiento y la <strong>ACEPTACIÓN</strong> plena y sin reservas de todas y cada una de las condiciones y términos de uso contenidas en este Aviso Legal.</p>
+                    <p>Si la persona usuaria no estuviera de acuerdo con alguna de las condiciones aquí expuestas, deberá abstenerse de utilizar la página web.</p>
+                    <p>La presente página web tiene por objeto facilitar a las personas usuarias, clientes y/o potenciales clientes, información relativa a las actividades, productos y/o servicios de Jerusa Villergas López u otra información que pueda resultar de interés.</p>
+                </section>
+
+                <section id="modificaciones">
+                    <h2>3. Modificaciones e Información</h2>
+                    <p>La información contenida en este sitio web está sujeta a <strong>continua actualización</strong>, por lo que Jerusa Villergas López se reserva la facultad de efectuar, en cualquier momento y sin necesidad de previo aviso, modificaciones y actualizaciones de la información, de la configuración y presentación del Sitio Web, y de las condiciones de acceso.</p>
+                    <p>Por ello, la persona usuaria debe leer atentamente el presente Aviso Legal cada vez que acceda al Sitio Web.</p>
+                </section>
+
+                <section id="acceso">
+                    <h2>4. Acceso y Navegación</h2>
+                    <p>El acceso a la página web por parte de las personas usuarias es público y gratuito.</p>
+                    <p><strong>Menores de edad:</strong> Queda prohibida la contratación/alta de servicios a través de la página web por parte de menores de edad.</p>
+                </section>
+
+                <section id="contenidos-enlaces">
+                    <h2>5. Contenidos, Uso Adecuado y Enlaces</h2>
+                    <p>La información contenida en esta web tiene carácter <strong>meramente informativo</strong> y, en ningún caso, constituye asesoramiento de ninguna índole (legal, fiscal, profesional, etc.).</p>
+                    <p>Las personas usuarias se comprometen a hacer un uso adecuado de los contenidos y servicios (como los servicios de blog o comentarios) que el titular de la página web ofrece, y a no emplearlos para:</p>
+                    <ul>
+                        <li>Incurrir en actividades ilícitas, ilegales o contrarias a la buena fe y al orden público.</li>
+                        <li>Difundir contenidos o propaganda de carácter racista, xenófobo, pornográfico-ilegal, de apología del terrorismo o atentatorio contra los derechos humanos.</li>
+                        <li>Provocar daños en los sistemas físicos y lógicos de Jerusa Villergas López, de sus proveedores o de terceras personas.</li>
+                    </ul>
+
+                    <h3>Enlaces a Terceros (Links):</h3>
+                    <p>Los enlaces externos que contiene este Sitio Web conducen a sitios gestionados por terceros. Jerusa Villergas López no responde de los contenidos ni del estado de dichos sitios, y el uso de estos enlaces no implica que Jerusa Villergas López recomiende o apruebe los contenidos de las páginas de destino. La función de los enlaces es exclusivamente la de informar a las personas usuarias sobre otras fuentes de información.</p>
+                </section>
+
+                <section id="propiedad-intelectual">
+                    <h2>6. Propiedad Industrial e Intelectual</h2>
+                    <p>Todos los contenidos, textos, fotografías, gráficos, imágenes, iconos, tecnología, software, links y demás contenidos audiovisuales y/o sonoros, así como su diseño gráfico y códigos fuente (en adelante, los "Contenidos"), son propiedad intelectual del titular de la página web o de terceros que han cedido su uso.</p>
+                    <p>No podrá entenderse cedido a la persona usuaria ningún derecho de explotación reconocido por la legislación vigente sobre los Contenidos, salvo aquellos estrictamente necesarios para el uso de la Web. La persona usuaria se compromete a respetar los derechos de Propiedad Intelectual e Industrial titularidad de Jerusa Villergas López.</p>
+                </section>
+
+                <section id="responsabilidades">
+                    <h2>7. Responsabilidades</h2>
+                    <p><strong>Jerusa Villergas López excluye cualquier responsabilidad derivada de:</strong></p>
+                    <ul>
+                        <li><strong>Interrupciones/Errores de Acceso:</strong> Daños y perjuicios de cualquier índole causados por interrupciones o errores en el acceso al Sitio Web, fallos informáticos, averías telefónicas, desconexiones, retrasos o bloqueos.</li>
+                        <li><strong>Falta de Lectura:</strong> Daños y perjuicios de cualquier índole derivados, directa o indirectamente, de la falta de lectura o del incumplimiento de las obligaciones especificadas en este aviso.</li>
+                        <li><strong>Contenido Aportado por Usuarios:</strong> Respecto a los comentarios o contenidos aportados en el blog o redes sociales, el usuario cede a título gratuito sus derechos de propiedad intelectual y es el único responsable del contenido publicado.</li>
+                    </ul>
+                </section>
+
+                <section id="politicas-complementarias">
+                    <h2>8. Política de Privacidad y Cookies</h2>
+                    <p>Este Aviso Legal se complementa con la <strong>Política de Privacidad</strong> y la <strong>Política de Cookies</strong> del Sitio Web. La persona usuaria deberá leer y aceptar dichas políticas para utilizar la web.</p>
+                </section>
+
+                <section id="normativa-jurisdiccion">
+                    <h2>9. Normativa y Jurisdicción</h2>
+                    <p>Las presentes Condiciones de Uso del Sitio Web se rigen en todos y cada uno de sus extremos por la **ley española**. Este aviso legal permanecerá accesible por medio de Internet en este mismo sitio web.</p>
+                    <p>Para cualquier discrepancia o controversia que pudiera surgir, las partes se someten a los **Juzgados y Tribunales de la ciudad de Santiago de Compostela** (España), con renuncia a cualquier otro fuero que pudiera corresponderles.</p>
+                </section>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor pie-contenedor">
+            <div class="pie-logo">
+                <a href="/index.html">
+                    <img src="/JVL-blanco-400.png" alt="Logotipo de Jerusa Villergas Psicología">
+                </a>
+            </div>
+            <div class="pie-menu">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="index.html#sobre-mi">Sobre mí</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="pie-legal">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="politica-privacidad.html">Política de privacidad</a></li>
+                    <li><a href="aviso-legal.html">Aviso legal</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pie-derechos">
+            <p>&copy; 2025 - Jerusa Villergas Psicología</p>
+        </div>
+    </footer>
+
+    <script src="script24.js"></script>
+</body>
+</html>
