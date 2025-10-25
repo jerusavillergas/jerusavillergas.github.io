@@ -3,7 +3,7 @@
     /* Paleta Vintage Oscura y Formal */
 
     --color-principal: #1E1E1E;        /*Gris Muy Oscuro/Negro Suave para barra de navegación y pie) CAMBIAR A MENUS*/
-    --color-acento: #F5F5DC;           /* Blanco Espuma - Para botones, enlaces en hover, iconos y la franja inicial donde aparece título (y foto mona) */
+    --color-acento: #017F7F;           /* Blanco Espuma - Para botones, enlaces en hover, iconos y la franja inicial donde aparece título (y foto mona) */
     --color-texto: #1E1E1E;            /* igual que barra navegación */
     --color-fondo: #d5c089;            /* color "dorado" del marco de la mona */
     --color-blanco-espuma: #F5F5DC; /* Crema Vintage/Beige Claro (Para títulos principales, textos importantes o alto contraste. Imita el cuello de la camisa.) */
@@ -360,7 +360,7 @@ section {
 /*------------------------------------------------------------------------------------------------ nuevo formato para imagen principal ------------ */
 .inicio-jvl {
     flex-shrink: 0;
-    margin-right: 40px; /* Más margen a la derecha */
+   /* margin-right: 40px; /* Más margen a la derecha */
 }
 
 .inicio-jvl img {
