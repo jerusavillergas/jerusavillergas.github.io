@@ -1,12 +1,16 @@
 /* Variables para la paleta de colores */
 :root {
     /* Paleta Vintage Oscura y Formal */
-    --color-principal: #4E342E;      /* Marrón Oscuro Profundo (Inspirado en el libro/chaqueta, para la barra de navegación o secciones principales) */
-    --color-secundario: #2C2C2C;     /* Gris Carbón Cálido (Para fondos secundarios o tarjetas de contenido) */
-    --color-acento: #8D6E63;         /* Marrón Rojizo/Sepia (Para botones, enlaces en hover, iconos. Es el toque de color.) */
-    --color-fondo: #1E1E1E;         /* Gris Muy Oscuro/Negro Suave (El fondo general de la página para la ambientación oscura) */
-    --color-texto: #CCCCCC;         /* Gris Claro (Para el texto principal de los párrafos, legible sobre fondos oscuros) */
+
+    --color-principal: #1E1E1E;        /*Gris Muy Oscuro/Negro Suave para la barra de navegación o secciones principales) */
+    --color-acento: #F5F5DC;           /* Blanco Espuma - Para botones, enlaces en hover, iconos y la franja inicial donde aparece título (y foto mona) */
+    --color-texto: #1E1E1E;            /* igual que barra navegación */
+    --color-fondo: #d5c089;            /* color "dorado" del marco de la mona */
     --color-blanco-espuma: #F5F5DC; /* Crema Vintage/Beige Claro (Para títulos principales, textos importantes o alto contraste. Imita el cuello de la camisa.) */
+
+    
+    /* para cambiar: */
+    --color-secundario: #2C2C2C;     /* Gris Carbón Cálido (Para fondos secundarios o tarjetas de contenido) */
 }
 
 /* Estilos generales del BODY */
