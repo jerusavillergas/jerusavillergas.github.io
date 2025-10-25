@@ -369,7 +369,7 @@ section {
 /* Estilos para el pie de página (footer) */
 footer {
     background-color: var(--color-principal); /* Utiliza el color principal */
-    color: var(--color-fondo); /* Texto blanco/claro */
+    color: var(--color-espuma-blanca); 
     padding: 60px 0 20px;
     text-align: center;
 }
@@ -415,7 +415,7 @@ footer {
 
 .pie-menu a,
 .pie-legal a {
-    color: var(--color-fondo);
+    color: var(--color-acento);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -770,11 +770,11 @@ footer {
 
     /* Títulos y Párrafos Generales en Móvil */
     h1 {
-        font-size: 2.rem;
+        font-size: 1.9rem;
     }
     
     h2 {
-        font-size: 1.8rem; 
+        font-size: 1.6rem; 
         margin-bottom: 40px;
     }
     
