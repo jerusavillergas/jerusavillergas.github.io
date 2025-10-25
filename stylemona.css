@@ -44,7 +44,7 @@ body {
 
 /* Encabezados y títulos */
 h1, h2, h3, h4 {
-    font-family: 'Cinzel Decorative', serif; /* Fuente condensada y formal */
+    font-family: 'Playfair Display', serif; /* Fuente condensada y formal */
     color: var(--color-texto); 
     font-weight: 500; /* Un peso medio (en lugar de 700) para un look más refinado */
     line-height: 1.2;
