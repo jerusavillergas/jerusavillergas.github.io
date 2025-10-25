@@ -5,7 +5,7 @@
     --color-principal: #1E1E1E;        /*Gris Muy Oscuro/Negro Suave para barra de navegación y pie) CAMBIAR A MENUS*/
     --color-acento: #017F7F;           /*Para botones, enlaces en hover, iconos y la franja inicial donde aparece título (y foto mona) */
     --color-texto: #1E1E1E;            /* igual que barra navegación */
-    --color-fondo: ##F2F2F2;            /* gris claro (#d5c089 color "dorado" del marco de la mona */
+    --color-fondo: #F2F2F2;            /* gris claro (#d5c089 color "dorado" del marco de la mona */
     --color-blanco-espuma: #FFFFFA;    
 
     
@@ -348,18 +348,21 @@ section {
 }
 
 /*------------------------------------------------------------------------------------------------ nuevo formato para imagen principal ------------ */
-/* .inicio-jvl {
-    flex-shrink: 0;
-    margin-right: 40px;
-}
-*/
 
-.inicio-jvl img {
-    /*width: 400px;
-    height: 400px;*/
-    object-fit: cover;
-
+.inicio-jvl { 
+    text-align: center; 
+    margin: 40px auto; 
+    max-width: 400px; 
 }
+
+.inicio-jvl img { 
+    width: 100%; 
+    max-width: 400px;
+    height: auto; 
+    object-fit: cover; 
+    margin: 0 auto 15px auto;
+}
+
 /*------------------------------------------------------------------------------------------------ ................................. ------------ */
 
 
@@ -824,13 +827,7 @@ footer {
         height: 180px; 
     }
 
-    .inicio-jvl img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-
-}
-    .ficha-contenido h3 {
+     .ficha-contenido h3 {
        font-size: 1.6rem; 
     }
     .ficha-contenido p {
@@ -881,7 +878,9 @@ footer {
     /*.numero-telefono-header {
         display: none; Oculta el número de teléfono en móviles */
     }
-
+    .no-scroll {
+    overflow: hidden;
+    }
     /* Ajustes si el logo queda muy grande en móvil */
     .logo img {
         height: 40px; /* Reduce un poco el tamaño del logo en móviles si es necesario */
