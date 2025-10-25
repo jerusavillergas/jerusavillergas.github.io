@@ -376,7 +376,7 @@ section {
 /* Estilos para el pie de página (footer) */
 footer {
     background-color: var(--color-texto); 
-    color: var(--color-espuma-blanca); 
+    color: var(--color-blanco-espuma); 
     padding: 60px 0 20px;
     text-align: center;
 }
@@ -404,7 +404,7 @@ footer {
 
 .pie-menu h4,
 .pie-legal h4 {
-    color: var(--color-espuma-blanca);
+    color: var(--color-blanco-espuma);
     margin-bottom: 15px;
 }
 
@@ -422,7 +422,7 @@ footer {
 
 .pie-menu a,
 .pie-legal a {
-    color: var(--color-espuma-blanca);
+    color: var(--color-blanco-espuma);
     text-decoration: none;
     transition: color 0.3s ease;
 }
