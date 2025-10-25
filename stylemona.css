@@ -816,6 +816,10 @@ footer {
         font-size: 1.15rem; 
         margin: 15px auto 30px;
     }
+    .hero h1 {
+        font-size: 1.8rem; /* Ajusta este valor si 1.8rem sigue siendo grande */
+        line-height: 1.2; /* Recomendable para encabezados de varias líneas */
+    }
     
     body {
         font-size: 1rem; /* Tamaño base del texto en móvil */
@@ -905,3 +909,5 @@ footer {
         height: 40px; /* Reduce un poco el tamaño del logo en móviles si es necesario */
     }
 }
+/*-----------------------------------------------------FIN del media query para móviles ---------------------------------------------------*/
+
