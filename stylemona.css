@@ -876,8 +876,8 @@ footer {
         text-align: left; /* En móvil, mejor alineado a la izquierda */
     }
     /*.numero-telefono-header {
-        display: none; Oculta el número de teléfono en móviles */
-    }
+        display: none; } Oculta el número de teléfono en móviles */
+  
     .no-scroll {
     overflow: hidden;
     }
