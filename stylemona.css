@@ -721,7 +721,7 @@ footer {
 
     .navbar .logo {
         order: 0;                                                      /*--------------------------------- estaba en 1----------*/
-        margin-right: 15px;
+        margin-right: 10px; /* taba en 15 */
         text-align: left;
     }
     .navbar .logo img {
