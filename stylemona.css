@@ -17,15 +17,15 @@ html, body {
     text-size-adjust: 100%;
 }
 body {
-    font-family: 'Alumni Sans', sans-serif;
-    font-weight: 400; /* Aseguramos un peso ligero para el texto principal */
-    color: var(--color-texto);
-    background-color: var(--color-blanco-espuma);
-    line-height: 1.65; /* Ligeramente más espaciado para mejor legibilidad */
+    font-family: 'PT Sans', sans-serif; /* Fuente sans-serif humanista, óptima para lectura */
+    font-weight: 400; 
+    color: var(--color-texto); /* Gris Claro (#CCCCCC) para el texto principal */
+    background-color: var(--color-fondo); /* Gris Muy Oscuro/Negro Suave (#1E1E1E) */
+    line-height: 1.65;
     margin: 0;
     padding: 0;
-    font-size: 1.125rem; /* Tamaño de fuente base más generoso */
-    letter-spacing: 0.02em; /* Ligero espaciado entre letras */
+    font-size: 1.125rem;
+    letter-spacing: 0; /* Espaciado normal para el cuerpo de texto para mejor lectura */
 }
 
 /* Contenedor principal para centrar el contenido */
@@ -38,13 +38,16 @@ body {
 
 /* Encabezados y títulos */
 h1, h2, h3, h4 {
-    font-family: 'Lexend Deca', sans-serif; 
-    color: var(--color-principal);
-    font-weight: 700;
+    font-family: 'Oswald', sans-serif; /* Fuente condensada y formal */
+    color: var(--color-blanco-espuma); /* Crema/Blanco Roto para alto contraste y elegancia */
+    font-weight: 500; /* Un peso medio (en lugar de 700) para un look más refinado */
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 0.8em;
+    letter-spacing: 0.05em; /* Añade un toque vintage de espaciado */
+    text-transform: uppercase; /* Opcional: añade un toque formal de cartel */
 }
+
 
 h1 {
     font-size: 3rem; /* Título principal más grande */
@@ -222,22 +225,23 @@ a {
 }
 
 a:hover {
-    color: var(--color-acento);
+    color: var(--color-blanco-espuma);
 }
 
 .boton {
     display: inline-block;
-    background-color: var(--color-secundario);
-    color: var(--color-blanco-espuma);
+    background-color: var(--color-acento);
+    color: var(--color-fondo);
     padding: 14px 28px; /* Botones más grandes */
     border-radius: 5px;
-    text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
     transition: background-color 0.3s ease;
     font-size: 1rem;
-    /* 'align: center;' no es una propiedad CSS válida para un botón directamente. */
-    /* El botón se centrará con 'text-align: center;' en su contenedor o flexbox. */
+    border: 2px solid var(--color-acento);
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+
 }
 
 .boton:hover {
