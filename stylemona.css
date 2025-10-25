@@ -1,11 +1,12 @@
 /* Variables para la paleta de colores */
 :root {
-    --color-principal: #15615C; /* Verde oscuro */
-    --color-secundario: #7D4C4C; /* Marrón Roca Cálido */
-    --color-acento: #4CA7B3; /* Turquesa profundo (anteriormente color-azul-agua-clara) */
-    --color-fondo: #FAFAF5; /* Beige Arena #F5F5DC */ 
-    --color-texto: #333333; /* Gris oscuro para el texto */
-    --color-blanco-espuma: #FFFFFF; /* Blanco Espuma */
+    /* Paleta Vintage Oscura y Formal */
+    --color-principal: #4E342E;      /* Marrón Oscuro Profundo (Inspirado en el libro/chaqueta, para la barra de navegación o secciones principales) */
+    --color-secundario: #2C2C2C;     /* Gris Carbón Cálido (Para fondos secundarios o tarjetas de contenido) */
+    --color-acento: #8D6E63;         /* Marrón Rojizo/Sepia (Para botones, enlaces en hover, iconos. Es el toque de color.) */
+    --color-fondo: #1E1E1E;         /* Gris Muy Oscuro/Negro Suave (El fondo general de la página para la ambientación oscura) */
+    --color-texto: #CCCCCC;         /* Gris Claro (Para el texto principal de los párrafos, legible sobre fondos oscuros) */
+    --color-blanco-espuma: #F5F5DC; /* Crema Vintage/Beige Claro (Para títulos principales, textos importantes o alto contraste. Imita el cuello de la camisa.) */
 }
 
 /* Estilos generales del BODY */
