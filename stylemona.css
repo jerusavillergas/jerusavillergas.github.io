@@ -801,13 +801,6 @@ footer {
         padding: 25px;
     }
 
-    .imagen-santiago-contenedor {
-        margin: 20px auto 30px auto; /* Ajusta márgenes en móvil */
-        padding: 30px; /* Menos padding en móvil */
-        text-align: center; 
-        max-width: calc(100% - 30px); /* Ocupa casi todo el ancho, dejando margen */
-    }
-
     /* Sección Sobre Mí */
     .sobre-mi-ficha {
         flex-direction: column; 
@@ -824,8 +817,8 @@ footer {
     }
 
     .inicio-jvl img {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
 
 }
