@@ -5,7 +5,7 @@
     --color-principal: #1E1E1E;        /*Gris Muy Oscuro/Negro Suave para barra de navegación y pie) CAMBIAR A MENUS*/
     --color-acento: #017F7F;           /* Blanco Espuma - Para botones, enlaces en hover, iconos y la franja inicial donde aparece título (y foto mona) */
     --color-texto: #1E1E1E;            /* igual que barra navegación */
-    --color-fondo: #d5c089;            /* color "dorado" del marco de la mona */
+    --color-fondo: #DBDBDB;            /* gris claro (#d5c089 color "dorado" del marco de la mona */
     --color-blanco-espuma: #F5F5DC; /* Crema Vintage/Beige Claro (Para títulos principales, textos importantes o alto contraste. Imita el cuello de la camisa.) */
 
     
@@ -204,8 +204,8 @@ p {
 
 /* Sección principal (Hero) */
 .hero {
-    background-color: var(--color-acento); /* Usamos color acento para el hero */
-    color: var(--color-blanco-espuma);
+    background-color: var(--color-blanco-espuma);
+    /* color: var(--color-blanco-espuma); */
     padding: 100px 0; /* Más padding para el hero */
     text-align: center;
 }
