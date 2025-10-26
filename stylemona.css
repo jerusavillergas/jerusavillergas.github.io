@@ -79,9 +79,9 @@ p {
     display: flex; /* Habilita Flexbox en el contenedor */
     align-items: center; /* Alinea los ítems verticalmente (texto y líneas) */
     text-align: center; /* Centra el contenido (si el contenedor no tiene el ancho completo) */
-    margin: 60px auto; /* Centra el bloque en la página y da margen vertical */
+    margin: 20px auto; /* Centra el bloque en la página y da margen vertical */
     max-width: 900px; /* Limita el ancho máximo para que las líneas no sean demasiado largas */
-    margin-bottom: 0;
+    margin-bottom: 20;
 }
 .titulo-enmarcado::before, .titulo-enmarcado::after {
     content: '';
