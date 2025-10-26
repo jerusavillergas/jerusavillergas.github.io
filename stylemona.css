@@ -753,6 +753,7 @@ footer {
         order: 0;                                                      /*--------------------------------- estaba en 1----------*/
         margin-right: 10px; /* taba en 15 */
         text-align: left;
+        vertical-align: middle;
     }
     .navbar .logo img {
         height: 40px;
@@ -786,6 +787,7 @@ footer {
         box-sizing: border-box;
         text-align: left;                                                 /*--------------------------------estaba en center----------------------------*/
         white-space: normal;
+        vertical-align: middle;
     }
     
     .navbar nav a:last-child {
