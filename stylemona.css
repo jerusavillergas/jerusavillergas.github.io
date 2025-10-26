@@ -731,7 +731,7 @@ footer {
 
     /* Navbar y Menú */
     .navbar {
-        min-height: 60px;
+        min-height: 70px;
         padding: 10px 0;
     }
 
@@ -760,16 +760,16 @@ footer {
     }
 
     .navbar nav {
-        display: flex; /* estaba en NONE*/ 
+        display: none; 
         flex-direction: column;
         width: 100%;
         background-color: var(--color-principal);
         position: absolute;
-        top: 60px;
+        top: 70px;
         left: 0;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         z-index: 999;
-        height: calc(100vh - 60px);
+        height: calc(100vh - 70px);
         overflow-y: auto;
         padding-bottom: 20px;
     }
@@ -916,4 +916,3 @@ footer {
     }
 }
 /*-----------------------------------------------------FIN del media query para móviles ---------------------------------------------------*/
-
