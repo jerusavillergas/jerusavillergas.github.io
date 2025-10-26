@@ -798,6 +798,10 @@ footer {
         width: calc(100% - 40px);
     }
 
+    .nombre-header {
+        display: none; /* Oculta el nombre de teléfono en móviles */
+    }
+
     /* Títulos y Párrafos Generales en Móvil */
     h1 {
         font-size: 1.8rem;
