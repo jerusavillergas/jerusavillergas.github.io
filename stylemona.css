@@ -105,7 +105,6 @@ p {
     display: flex;
     justify-content: space-between; /* Espacia logo+teléfono del menú/botón */
     align-items: center;
-    height: 60px;
     padding: 10px 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -732,7 +731,7 @@ footer {
 
     /* Navbar y Menú */
     .navbar {
-        min-height: 70px;
+        min-height: 60px;
         padding: 10px 0;
     }
 
@@ -761,16 +760,16 @@ footer {
     }
 
     .navbar nav {
-        display: none; 
+        display: flex; /* estaba en NONE*/ 
         flex-direction: column;
         width: 100%;
         background-color: var(--color-principal);
         position: absolute;
-        top: 70px;
+        top: 60px;
         left: 0;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         z-index: 999;
-        height: calc(100vh - 70px);
+        height: calc(100vh - 60px);
         overflow-y: auto;
         padding-bottom: 20px;
     }
