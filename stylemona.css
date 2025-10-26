@@ -105,6 +105,7 @@ p {
     display: flex;
     justify-content: space-between; /* Espacia logo+teléfono del menú/botón */
     align-items: center;
+    height: 60px;
     padding: 10px 20px;
     max-width: 1200px;
     margin: 0 auto;
