@@ -1,0 +1,971 @@
+/* Variables para la paleta de colores */
+:root {
+    --color-principal: #15615C; /* Verde oscuro */
+    --color-secundario: #7D4C4C; /* Marrón Roca Cálido */
+    --color-acento: #4CA7B3; /* Turquesa profundo (anteriormente color-azul-agua-clara) */
+    --color-fondo: #FAFAF5; /* Beige Arena #F5F5DC */ 
+    --color-texto: #333333; /* Gris oscuro para el texto */
+    --color-blanco-espuma: #FFFFFF; /* Blanco Espuma */
+}
+
+/* Estilos generales del BODY */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+body {
+    font-family: 'Lexend Deca', sans-serif; /* Usamos Lexend Deca para el cuerpo */
+    font-weight: 400; /* Aseguramos un peso ligero para el texto principal */
+    color: var(--color-texto);
+    background-color: var(--color-blanco-espuma);
+    line-height: 1.65; /* Ligeramente más espaciado para mejor legibilidad */
+    margin: 0;
+    padding: 0;
+    font-size: 1.125rem; /* Tamaño de fuente base más generoso */
+    letter-spacing: 0.02em; /* Ligero espaciado entre letras */
+}
+
+/* Contenedor principal para centrar el contenido */
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 25px; /* Más padding para 'aire' lateral */
+    box-sizing: border-box;
+}
+
+/* Encabezados y títulos */
+h1, h2, h3, h4 {
+    font-family: 'Alumni Sans', sans-serif; /* Alumni Sans para los títulos */
+    color: var(--color-principal);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.8em;
+}
+
+h1 {
+    font-size: 3rem; /* Título principal más grande */
+    color: var(--color-blanco-espuma);
+}
+h2 {
+    font-size: 2.2rem; /* Títulos de sección más grandes */
+    text-align: center;
+    margin-bottom: 60px; /* Más espacio debajo de los títulos de sección */
+    color: var(--color-principal);
+}
+h3 {
+    font-size: 1.7rem; /* Títulos de subsección */
+    color: var(--color-acento); /* Usamos el color acento para h3 */
+    margin-bottom: 1rem;
+}
+p {
+    margin-bottom: 1.2em;
+    font-size: 1.125rem;
+}
+
+
+/* ---------------BARRA de Navegación------------------ */
+.navbar {
+    background-color: var(--color-principal);
+    padding: 15px 0;
+    color: var(--color-blanco-espuma);
+    position: relative;
+}
+
+.header-contenido { 
+    display: flex;
+    justify-content: space-between; /* Espacia logo+teléfono del menú/botón */
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Agrupa logo y teléfono para que Flexbox los trate como un solo elemento en el espacio */
+.logo-y-telefono {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio entre el logo y el número de teléfono */
+}
+
+/* Contenedor del número de teléfono y ahora también del icono de WhatsApp */
+.numero-telefono-header {
+    display: flex; /* Para poner los elementos en línea */
+    align-items: center; /* Centrar verticalmente */
+    gap: 15px; /* Espacio entre el teléfono y el icono de WhatsApp */
+}
+
+.numero-telefono-header a {
+    color: var(--color-blanco-espuma); /* Color del texto del teléfono */
+    text-decoration: none;
+    font-size: 1.1rem; /* Tamaño del texto del teléfono */
+    font-weight: 500;
+    transition: color 0.3s ease;
+    white-space: nowrap; /* Evita que el número se rompa en varias líneas */
+    display: flex; /* Para alinear el icono y el texto */
+    align-items: center;
+    gap: 8px; /* Espacio entre el icono y el texto del número */
+}
+
+.numero-telefono-header a:hover {
+    color: var(--color-acento); /* Color al pasar el ratón */
+}
+
+.numero-telefono-header i {
+    color: var(--color-blanco-espuma);
+    font-size: 1.2rem; /* Tamaño del icono de teléfono */
+}
+
+/* Estilos específicos para el icono de WhatsApp en el header */
+.numero-telefono-header .fab.fa-whatsapp {
+    font-size: 1.4rem; /* Un poco más grande para que destaque */
+}
+/* El hover ya lo cubre el selector .numero-telefono-header a:hover */
+
+
+/* Logotipo */
+.logo a {
+    text-decoration: none;
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    color: var(--color-blanco-espuma); /* Este estilo es redundante si logo es imagen */
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    vertical-align: middle;
+}
+
+/* Nombre de la psicóloga en el header */
+.nombre-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-blanco-espuma);
+    font-size: 1.1rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.nombre-header i {
+    font-size: 1.2rem;
+}
+
+
+.navbar nav a {
+    color: var(--color-blanco-espuma);
+    text-decoration: none;
+    padding: 0 18px; /* Un poco más de padding en la navegación */
+    transition: color 0.3s ease;
+    font-weight: 600;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.navbar nav a:hover {
+    color: var(--color-acento); 
+}
+
+/* Botón de hamburguesa - Oculto por defecto en escritorio */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-blanco-espuma);
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-blanco-espuma);
+    position: absolute;
+    transition: transform 0.3s ease, top 0.3s ease;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    top: 8px;
+}
+
+/* Animación de la hamburguesa a X */
+.menu-toggle.active .hamburger {
+    background-color: transparent;
+}
+
+.menu-toggle.active .hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.menu-toggle.active .hamburger::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+/* Sección principal (Hero) */
+.hero {
+    background-color: var(--color-acento); /* Usamos color acento para el hero */
+    color: var(--color-blanco-espuma);
+    padding: 100px 0; /* Más padding para el hero */
+    text-align: center;
+}
+
+.hero h1 {
+    margin-top: 0;
+    font-size: 3.5rem; /* H1 más grande en hero */
+}
+
+.hero p {
+    font-size: 1.35rem; /* Texto del hero más grande */
+    max-width: 700px;
+    margin: 25px auto 50px; /* Más espaciado */
+}
+
+/* Elementos de acento: enlaces y botones */
+a {
+    color: var(--color-acento);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-acento);
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco-espuma);
+    padding: 14px 28px; /* Botones más grandes */
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    /* 'align: center;' no es una propiedad CSS válida para un botón directamente. */
+    /* El botón se centrará con 'text-align: center;' en su contenedor o flexbox. */
+}
+
+.boton:hover {
+    background-color: var(--color-principal);
+}
+
+/* Secciones de contenido */
+section {
+    padding: 80px 0; /* espacio vertical entre secciones, un poco más generoso */
+}
+
+/* Estilos de sección alternos */
+.seccion-clara {
+    background-color: var(--color-blanco-espuma); /* Fondo Beige Arena */
+    color: var(--color-texto);
+}
+
+.seccion-oscura {
+    background-color: var(--color-acento); /* Fondo color acento */
+    color: var(--color-blanco-espuma); /* Texto Blanco Espuma */
+}
+
+.seccion-oscura h2, .seccion-oscura h3 {
+    color: var(--color-principal); /* Títulos en color principal */
+}
+
+.seccion-oscura .boton {
+    background-color: var(--color-principal); /* Botones en color principal */
+    color: var(--color-blanco-espuma);
+}
+
+.seccion-oscura .boton:hover {
+    background-color: var(--color-secundario); /* Hover en Marrón Roca */
+}
+
+/* -------------- SERVICIOS -----------------------*/
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.servicio {
+    background-color: var(--color-fondo);
+    padding: 35px; /* Más padding en los servicios */
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08); /* Sombra más sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.servicio h3 {
+    margin-bottom: 0.8em;
+    font-size: 1.5rem; /* Título de servicio un poco más grande */
+}
+
+.servicio h4 {
+    font-family: 'Lexend Deca', sans-serif; /* Subtítulo de servicio con fuente del cuerpo */
+    font-size: 1.1rem;
+    color: var(--color-secundario);
+    font-weight: 500;
+    margin-top: -0.5em; /* Acercar al h3 */
+    margin-bottom: 1.5em; /* Espacio debajo */
+}
+
+.servicio p {
+    font-size: 1rem; /* Texto de servicio */
+    margin-bottom: 0;
+    text-align: left;
+}
+
+
+.imagen-santiago-contenedor {
+    text-align: center; /* Centra la imagen */
+    margin: 20px auto 50px auto; /* Espacio y centrado: arriba, derecha/izquierda (auto), abajo, derecha/izquierda (auto) */
+    max-width: 800px; /* Limita el ancho MÁXIMO del contenedor blanco en escritorios */
+    background-color: var(--color-blanco-espuma); /* Fondo blanco para la "base" de la ilustración */
+    padding: 30px; /* Espacio interno alrededor de la imagen dentro del fondo blanco */
+    border-radius: 10px; /* Bordes ligeramente redondeados */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08); /* Sombra suave para que destaque un poco */
+    box-sizing: border-box; /* Asegura que el padding no añada ancho extra */
+}
+
+.imagen-santiago {
+    max-width: 50%; /* La imagen ocupará el 100% del ancho de su contenedor (el fondo blanco) */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Importante para evitar espacios extra y para centrar si fuera necesario */
+}
+
+
+/* Sobre Mí - Ficha */
+.sobre-mi-ficha {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto 50px auto; /* Añadido margen inferior para separar fichas */
+    background-color: var(--color-blanco-espuma);
+    padding: 40px; /* Más padding en la ficha */
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Invertir el orden de imagen y texto en fichas alternas */
+#enfoque .sobre-mi-ficha:nth-child(even) { /* Selecciona el segundo, cuarto, etc. .sobre-mi-ficha dentro de #enfoque */
+    flex-direction: row-reverse;
+}
+
+#enfoque .sobre-mi-ficha:nth-child(even) .ficha-imagen {
+    margin-right: 0;
+    margin-left: 40px; /* Margen a la izquierda para fichas invertidas */
+}
+
+
+.ficha-imagen {
+    flex-shrink: 0;
+    margin-right: 40px; /* Más margen a la derecha */
+}
+
+.ficha-imagen img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--color-fondo);
+}
+
+/*------------------------------------------------------------------------------------------------ nuevo formato para imagen principal ------------ */
+.inicio-jvl {
+    flex-shrink: 0;
+    margin-right: 40px; /* Más margen a la derecha */
+}
+
+.inicio-jvl img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20%;
+    border: 4px solid var(--color-fondo);
+}
+/*------------------------------------------------------------------------------------------------ ................................. ------------ */
+
+
+.ficha-contenido p {
+    text-align: left;
+}
+
+.ficha-contenido h3 {
+    color: var(--color-acento);
+    margin-top: 0;
+    font-size: 1.8rem;
+    text-align: left; /* Alineado a la izquierda por defecto en ficha */
+}
+
+/* Estilos para el pie de página (footer) */
+footer {
+    background-color: var(--color-principal); /* Utiliza el color principal */
+    color: var(--color-fondo); /* Texto blanco/claro */
+    padding: 60px 0 20px;
+    text-align: center;
+}
+
+.pie-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    gap: 30px; /* Espacio entre las columnas */
+    text-align: left;
+}
+
+.pie-logo img {
+    height: 60px; /* Tamaño del logo en el pie de página */
+    width: auto;
+    text-align: left;
+}
+
+.pie-menu,
+.pie-legal {
+    flex: 1; /* Permite que las columnas crezcan */
+    min-width: 150px;
+}
+
+.pie-menu h4,
+.pie-legal h4 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-family: 'Alumni Sans', sans-serif;
+    font-weight: 700;
+}
+
+.pie-menu ul,
+.pie-legal ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+.pie-menu ul li,
+.pie-legal ul li {
+    margin-bottom: 8px;
+}
+
+.pie-menu a,
+.pie-legal a {
+    color: var(--color-fondo);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+}
+
+.pie-menu a:hover,
+.pie-legal a:hover {
+    color: var(--color-acento); /* Cambia el color al pasar el ratón */
+}
+
+.pie-derechos {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/* Media para móvil */
+@media (max-width: 767px) {
+    .pie-contenedor {
+        justify-content: center;
+        text-align: center;
+    }
+    .pie-menu, .pie-legal {
+        min-width: auto;
+    }
+}
+
+/* ======================================================= */
+/* ESTILOS PARA EL ACORDEÓN (FAQ)                          */
+/* ======================================================= */
+
+.acordeon {
+    max-width: 900px; /* Acordeón un poco más ancho */
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px; /* Bordes más redondeados */
+    overflow: hidden; /* Cambiado a hidden para evitar scroll inesperado cuando está cerrado */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.acordeon-item {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.acordeon-item:last-child {
+    border-bottom: none;
+}
+
+.acordeon-titulo {
+    background-color: var(--color-fondo);
+    color: var(--color-acento); /* Texto de pregunta en Turquesa Profundo */
+    padding: 20px 30px; /* Más padding */
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.25rem; /* Pregunta más grande */
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    font-family: 'Lexend Deca', sans-serif; /* Fuente para el título del acordeón */
+}
+
+.acordeon-titulo:hover {
+    background-color: #f0f0f0; /* Un gris muy suave al pasar el ratón */
+}
+
+.icono-acordeon {
+    width: 14px; /* Icono un poco más grande */
+    height: 14px;
+    position: relative;
+    margin-left: 15px;
+}
+
+.icono-acordeon::before,
+.icono-acordeon::after {
+    content: '';
+    position: absolute;
+    background-color: var(--color-principal);
+    transition: transform 0.3s ease;
+}
+
+.icono-acordeon::before {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: translateY(-50%);
+}
+
+.icono-acordeon::after {
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    transform: translateX(-50%);
+}
+
+.acordeon-titulo.active .icono-acordeon::after {
+    transform: translateX(-50%) rotate(90deg);
+}
+
+.acordeon-contenido {
+    background-color: #ffffff;
+    max-height: 0;
+    overflow: hidden; /* Cambiado a hidden para evitar scroll inesperado cuando está cerrado */
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out; /* Transición más larga */
+}
+
+.acordeon-contenido.active {
+    max-height: 700px; /* Ajuste el valor según el contenido más largo que esperes */
+    padding: 20px 30px; /* Más padding al abrir */
+}
+
+.acordeon-contenido p {
+    margin: 0;
+    padding-bottom: 10px;
+    color: var(--color-texto);
+    font-size: 1.05rem; /* Texto de respuesta ligeramente más pequeño que el cuerpo */
+}
+
+
+/* ======================================================= */
+/* ESTILOS PARA LA NUEVA SECCIÓN DE CONTACTO             */
+/* ======================================================= */
+
+/* El h2 ya tiene estilos globales, ajustamos solo el margen si es necesario */
+#contacto h2 {
+    margin-bottom: 40px;
+}
+
+/* Añadido un subtítulo para la descripción, como en tu HTML */
+.subtitulo-contacto {
+    text-align: center;
+    margin: -30px auto 40px auto; /* Ajusta el margen para que esté debajo del h2 */
+    max-width: 600px;
+    font-size: 1.15rem;
+}
+
+
+.contacto-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap; /* Permite que las columnas se envuelvan en pantallas pequeñas */
+    margin-top: 40px; /* Espacio entre el subtítulo y el contenido flex */
+}
+
+.contacto-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contacto-mapa {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contacto-mapa img { /* Se cambió de iframe a img */
+    width: 100%;
+    height: auto; /* Mantener la proporción */
+    min-height: 300px; /* Altura mínima para que no sea demasiado pequeño */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+}
+
+.info-item {
+    margin-bottom: 30px;
+}
+
+.icono-circulo {
+    background-color: var(--color-acento); /* Utiliza el color acento para el círculo */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.icono-circulo i {
+    color: var(--color-blanco-espuma);
+    font-size: 1.5rem; /* Ajustado a 1.5rem */
+}
+
+.info-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--color-principal);
+    font-weight: 700;
+}
+
+.info-item p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    color: var(--color-texto);
+}
+
+/* Estilos para los enlaces de contacto */
+.info-item .info-link {
+    text-decoration: none; /* Eliminar el subrayado por defecto de los enlaces */
+    color: inherit; /* Hereda el color del texto de su padre */
+    display: flex; /* Asegura que el enlace ocupe todo el espacio del item y mantenga el layout flex */
+    align-items: center; /* Alinea los elementos verticalmente */
+    gap: 20px; /* Espacio entre el icono-circulo y el texto */
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+    padding: 10px; /* Un poco de padding para hacer el área clicable más grande */
+    margin: -10px; /* Compensa el padding para no afectar el margin-bottom del info-item */
+    border-radius: 8px; /* Pequeño borde redondeado al área clicable */
+}
+
+.info-item .info-link:hover {
+    background-color: rgba(0, 0, 0, 0.03); /* Un fondo sutil al pasar el ratón */
+    cursor: pointer;
+}
+
+/* Asegurarse de que los estilos de texto dentro del enlace se mantengan */
+.info-item .info-link h3 {
+    color: var(--color-principal); /* Mantener el color del título */
+}
+
+.info-item .info-link p {
+    color: var(--color-texto); /* Mantener el color del párrafo */
+}
+
+
+/* ======================================================= */
+/* ESTILOS PARA LA POLÍTICA DE PRIVACIDAD                */
+/* ======================================================= */
+
+.politica-privacidad-contenido p,
+.politica-privacidad-contenido ul li { 
+    font-size: 0.8rem; 
+    line-height: 1.7; 
+}
+.politica-privacidad-contenido p {
+    text-align: justify;
+    margin-bottom: 1.2em; /* espacio entre párrafos */
+}
+.politica-privacidad-contenido h1 {
+    font-size: 1.7rem; 
+    text-align: left;
+    color: #4CA7B3;
+    margin-bottom: 25px; /* margen inferior */
+    font-family: 'Alumni Sans', sans-serif;
+}
+.politica-privacidad-contenido h2 {
+    font-size: 1.3rem; 
+    text-align: left;
+    margin-bottom: 25px; /* margen inferior */
+    font-family: 'Alumni Sans', sans-serif;
+}
+.politica-privacidad-contenido h3 {
+    font-size: 1.3rem; 
+    text-align: left;
+    margin-bottom: 15px;
+    font-family: 'Alumni Sans', sans-serif;
+}
+.politica-privacidad-contenido ul {
+    margin-bottom: 1.5em; /* Espacio debajo de la lista */
+    padding-left: 25px; /* Espacio para los puntos de la lista */
+    text-align: left; /* Asegura que las listas no se justifiquen y sean legibles */
+}
+
+
+
+
+/* ==================================================================================================================== */
+/* ----------------------                          MEDIA QUERIES PARA MÓVILES                          ----------------------*/
+/* ==================================================================================================================== */
+@media (max-width: 767px) {
+    /* Contenedor general en móviles */
+    .contenedor {
+        padding: 0 15px;
+    }
+
+    /* Navbar y Menú */
+    .navbar {
+        min-height: 70px;
+        padding: 10px 0;
+    }
+
+    .navbar .contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; /* Centrar verticalmente en móvil */
+        flex-wrap: nowrap;
+        height: auto;
+    }
+
+    .menu-toggle {
+        display: block; 
+        order: 2;
+        margin-left: auto;
+    }
+
+    .logo-y-telefono {
+        gap: 10px; /* Menos espacio en móvil */
+    }
+
+    .logo {
+        order: 0; 
+        margin-right: 0; /* Elimina margen derecho para el logo */
+    }
+    .navbar .logo img {
+        height: 40px;
+    }
+
+    .numero-telefono-header {
+        order: 1; /* Coloca el teléfono/whatsapp entre el logo y el botón de menú */
+        flex-grow: 1; /* Permite que ocupe espacio si es necesario */
+        justify-content: flex-end; /* Alinea a la derecha para empujar al menú */
+        gap: 10px; /* Menos espacio entre teléfono y whatsapp en móvil */
+    }
+    .numero-telefono-header a {
+        font-size: 0.95rem; /* Tamaño de fuente más pequeño para el número de teléfono */
+        gap: 5px;
+    }
+    .numero-telefono-header i {
+        font-size: 1rem; /* Tamaño de icono más pequeño */
+    }
+    .numero-telefono-header .fab.fa-whatsapp {
+        font-size: 1.2rem; /* Tamaño del icono de WhatsApp */
+    }
+
+    .nombre-header {
+        display: none; /* Oculta el nombre de la psicóloga en móviles */
+    }
+
+
+    .navbar nav {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--color-principal);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 999;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+        padding-bottom: 20px;
+    }
+
+    .navbar nav.active {
+        display: flex; 
+    }
+
+    .navbar nav a {
+        padding: 15px 20px;
+        font-size: 1.1rem; 
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: left; 
+        white-space: normal;
+    }
+    
+    .navbar nav a:last-child {
+        border-bottom: none;
+    }
+
+    .navbar .boton {
+        display: block; 
+        margin: 15px auto;
+        width: calc(100% - 40px);
+    }
+
+    /* Títulos y Párrafos Generales en Móvil */
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem; 
+        margin-bottom: 40px;
+    }
+    
+    h3 {
+        font-size: 1.4rem; 
+    }
+
+    .hero p {
+        font-size: 1.15rem; 
+        margin: 15px auto 30px;
+    }
+    
+    body {
+        font-size: 1rem; /* Tamaño base del texto en móvil */
+    }
+
+    /* Sección de Servicios */
+    .servicios-grid {
+        grid-template-columns: 1fr; 
+    }
+    
+    .servicio {
+        margin-bottom: 25px;
+        padding: 25px;
+    }
+
+    .imagen-santiago-contenedor {
+        margin: 20px auto 30px auto; /* Ajusta márgenes en móvil */
+        padding: 30px; /* Menos padding en móvil */
+        text-align: center; 
+        max-width: calc(100% - 30px); /* Ocupa casi todo el ancho, dejando margen */
+    }
+
+    /* Sección Sobre Mí */
+    .sobre-mi-ficha {
+        flex-direction: column; 
+        padding: 30px;
+        text-align: center; 
+        margin-bottom: 30px; /* Espacio entre fichas en móvil */
+    }
+    .ficha-imagen {
+        margin-right: 0; 
+        margin-bottom: 25px; 
+    }
+    .ficha-imagen img {
+        width: 180px; 
+        height: 180px; 
+    }
+    .ficha-contenido h3 {
+       font-size: 1.6rem; 
+       text-align: center; /* Centrar en móvil */
+    }
+    .ficha-contenido p {
+        font-size: 1rem; 
+        text-align: center; /* Centrar en móvil */
+    }
+
+    /* Invertir el orden de imagen y texto en fichas alternas para móvil */
+    #enfoque .sobre-mi-ficha:nth-child(even) {
+        flex-direction: column; /* Vuelve a la dirección normal para móvil */
+    }
+    #enfoque .sobre-mi-ficha:nth-child(even) .ficha-imagen {
+        margin-left: 0; /* Elimina el margen izquierdo añadido para desktop */
+    }
+    
+    /* Ajustes específicos para el acordeón en móviles */
+    .acordeon-titulo {
+        font-size: 1.05rem;
+        padding: 15px 20px;
+    }
+    .acordeon-contenido p {
+        font-size: 0.95rem;
+    }
+    .acordeon-contenido.active {
+        padding: 15px 20px;
+    }
+    .acordeon {
+        border-radius: 8px; /* Bordes menos redondeados en móvil */
+    }
+
+    /* Media Query para la nueva sección de contacto */
+    .contacto-flex {
+        flex-direction: column; /* Apila las columnas en móvil */
+        gap: 30px; /* Ajusta el espacio */
+    }
+    .contacto-info,
+    .contacto-mapa {
+        min-width: unset; /* Reinicia el min-width */
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+    
+    .info-item {
+        margin-bottom: 25px; /* Espacio entre los items de contacto */
+    }
+    .info-item .info-link {
+        flex-direction: column; /* Apilar icono y texto en móvil */
+        text-align: center;
+        gap: 10px; /* Ajusta el espacio */
+    }
+
+    .politica-privacidad-contenido p {
+        text-align: left; /* En móvil, mejor alineado a la izquierda */
+    }
+}
