@@ -442,7 +442,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Media Query para móvil */
+/* Media  para móvil */
 @media (max-width: 767px) {
     .pie-contenedor {
         justify-content: center;
@@ -879,8 +879,8 @@ footer {
     .politica-privacidad-contenido p {
         text-align: left; /* En móvil, mejor alineado a la izquierda */
     }
-    /*.numero-telefono-header {
-        display: none; Oculta el número de teléfono en móviles */
+    .nombre-header {
+        display: none; /* Oculta el nombre de teléfono en móviles */
     }
 
     /* Ajustes si el logo queda muy grande en móvil */
