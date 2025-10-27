@@ -195,19 +195,19 @@ p {
 }
 
 /* Sección principal (Hero) */
-.hero {
+.hero-style {
     background-color: var(--color-acento); /* Usamos color acento para el hero */
     color: var(--color-blanco-espuma);
     padding: 100px 0; /* Más padding para el hero */
     text-align: center;
 }
 
-.hero h1 {
+.hero-style h1 {
     margin-top: 0;
     font-size: 3.5rem; /* H1 más grande en hero */
 }
 
-.hero p {
+.hero-style p {
     font-size: 1.35rem; /* Texto del hero más grande */
     max-width: 700px;
     margin: 25px auto 50px; /* Más espaciado */
@@ -699,7 +699,7 @@ footer {
     .navbar .contenedor {
         flex-direction: row;
         justify-content: space-between;
-        align-items: left;                                            /* ----------------------------estaba en center --------------*/
+        align-items: flex-start;     
         flex-wrap: nowrap;
         height: auto;
     }
