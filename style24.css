@@ -195,19 +195,19 @@ p {
 }
 
 /* Sección principal (Hero) */
-.hero-style {
-    background-color: var(--color-acento); /* Usamos color acento para el hero */
+.hero {
+    background-color: var(--color-acento); 
     color: var(--color-blanco-espuma);
     padding: 100px 0; /* Más padding para el hero */
     text-align: center;
 }
 
-.hero-style h1 {
+.hero h1 {
     margin-top: 0;
     font-size: 3.5rem; /* H1 más grande en hero */
 }
 
-.hero-style p {
+.hero p {
     font-size: 1.35rem; /* Texto del hero más grande */
     max-width: 700px;
     margin: 25px auto 50px; /* Más espaciado */
