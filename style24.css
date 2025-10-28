@@ -1,7 +1,7 @@
 /* Variables para la paleta de colores */
 :root {
     --color-principal: #081112; /* Barra navegación */
-    --color-secundario: #B3584C; /* Marrón Roca Cálido #7D4C4C */
+    --color-secundario: #234D52; /* Marrón Roca Cálido #7D4C4C */
     --color-acento: #4CA7B3; /* Turquesa profundo (anteriormente color-azul-agua-clara) */
     --color-fondo: #FAFAF5; /* Beige Arena #F5F5DC */ 
     --color-texto: #081112   ; /* Gris oscuro para el texto */
