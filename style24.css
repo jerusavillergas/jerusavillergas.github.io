@@ -17,7 +17,7 @@ html, body {
 }
 body {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400; /* Aseguramos un peso ligero para el texto principal */
+    font-weight: 400; /* peso ligero para texto principal */
     color: var(--color-texto);
     background-color: var(--color-blanco-espuma);
     line-height: 1.65; /* Ligeramente más espaciado para mejor legibilidad */
@@ -48,6 +48,7 @@ h1, h2, h3, h4 {
 h1 {
     font-size: 3rem; /* Título principal más grande */
     color: var(--color-blanco-espuma);
+    text-align:left;
 }
 h2 {
     font-size: 2.2rem; /* Títulos de sección más grandes */
