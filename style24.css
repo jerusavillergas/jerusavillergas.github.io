@@ -1,93 +1,95 @@
-/* --- ESTILOS MODERNIZADOS ESTILO BASE44 --- */
-
+/* Variables para la paleta de colores */
 :root {
     --color-principal: #081112; 
     --color-secundario: #234D52; 
     --color-acento: #4CA7B3; 
-    --color-fondo: #f9f9f7; /* Cambiado a un tono papel/crema para mayor calidez */
-    --color-texto: #2d2d2d; 
+    --color-fondo: #f9f9f7; /* Tono papel cálido */
+    --color-texto: #081112; 
     --color-blanco-espuma: #FFFFFF;
 }
 
-/* Base fluida */
-html, body { overflow-x: hidden; width: 100%; }
+/* Estilos generales del BODY */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
 body {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     color: var(--color-texto);
     background-color: var(--color-fondo); /* Fondo general cálido */
-    line-height: 1.7;
+    line-height: 1.65;
     margin: 0;
+    padding: 0;
     font-size: 1.125rem;
+    letter-spacing: 0.02em;
 }
 
+/* Contenedor principal */
 .contenedor {
-    max-width: 1000px; /* Un poco más contenido para lectura */
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 25px;
     box-sizing: border-box;
 }
 
-/* Tipografía elegante */
+/* Encabezados */
 h1, h2, h3, h4 {
     font-family: 'Playfair Display', serif;
     color: var(--color-principal);
+    font-weight: 700;
     line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.8em;
 }
 
-/* Sección Hero con bordes orgánicos */
-.hero {
-    background-color: #e8e8e3; /* Tono de contraste suave */
-    color: var(--color-principal);
-    padding: 100px 20px;
-    text-align: center;
-    border-radius: 0 0 40px 40px; /* Curvatura inferior */
-    margin-bottom: 60px;
-}
+h1 { font-size: 3rem; color: var(--color-blanco-espuma); }
+h2 { font-size: 2.2rem; text-align: center; margin-bottom: 60px; color: var(--color-principal); }
+h3 { font-size: 1.7rem; color: var(--color-acento); margin-bottom: 1rem; }
+p { margin-bottom: 1.2em; font-size: 1.125rem; }
 
-.hero h1 { color: var(--color-principal); font-size: 3.5rem; }
+/* Barra de Navegación */
+.navbar { background-color: var(--color-principal); padding: 15px 0; color: var(--color-blanco-espuma); position: relative; }
+.header-contenido { display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; max-width: 1200px; margin: 0 auto; }
+.logo-y-telefono { display: flex; align-items: center; gap: 15px; }
+.numero-telefono-header a { color: var(--color-blanco-espuma); text-decoration: none; font-size: 1.1rem; font-weight: 500; transition: color 0.3s ease; display: flex; align-items: center; gap: 8px; }
+.numero-telefono-header a:hover { color: var(--color-acento); }
+.logo a { text-decoration: none; font-size: 1.5rem; font-weight: 700; color: var(--color-blanco-espuma); display: flex; align-items: center; }
+.logo img { height: 60px; width: auto; vertical-align: middle; }
+.navbar nav a { color: var(--color-blanco-espuma); text-decoration: none; padding: 0 18px; transition: color 0.3s ease; font-weight: 600; font-size: 1rem; }
+.navbar nav a:hover { color: var(--color-acento); }
 
-/* Tarjetas y Contenedores con bordes redondeados (estilo base44) */
-.servicio, .sobre-mi-ficha, .acordeon {
-    background: #ffffff;
-    border-radius: 20px; /* Bordes más redondeados */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Sombra suave */
-    border: 1px solid rgba(0,0,0,0.03);
-    padding: 40px;
-}
+/* Sección Hero */
+.hero { background-color: var(--color-acento); color: var(--color-blanco-espuma); padding: 100px 0; text-align: center; border-radius: 0 0 30px 30px; }
+.hero h1 { font-size: 3.5rem; }
+.hero p { font-size: 1.35rem; max-width: 700px; margin: 25px auto 50px; }
 
-.servicio { transition: transform 0.3s ease; }
+/* Botones */
+.boton { display: inline-block; background-color: var(--color-secundario); color: var(--color-blanco-espuma); padding: 14px 28px; border-radius: 12px; text-transform: uppercase; font-weight: 600; letter-spacing: 1px; transition: transform 0.2s ease, background-color 0.3s ease; }
+.boton:hover { background-color: var(--color-principal); transform: translateY(-2px); }
+
+/* Secciones y Tarjetas */
+section { padding: 50px 0; }
+.servicio { background-color: var(--color-blanco-espuma); padding: 35px; border-radius: 20px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease; }
 .servicio:hover { transform: translateY(-5px); }
 
-/* Ajustes de imagen redondeada */
-.ficha-imagen img, .sobre-mi-ficha picture > img {
-    border-radius: 15px; /* Bordes suaves para imágenes */
-    border: none;
-}
-
-/* Botones más amables */
-.boton {
-    display: inline-block;
-    background-color: var(--color-secundario);
-    color: var(--color-blanco-espuma);
-    padding: 14px 28px;
-    border-radius: 12px; /* Botones más redondeados */
-    transition: transform 0.2s ease;
-}
-
-.boton:hover { transform: translateY(-2px); background-color: var(--color-principal); }
-
-/* Footer */
-footer { background-color: var(--color-principal); color: var(--color-blanco-espuma); padding: 60px 0; }
+/* Sobre Mí */
+.sobre-mi-ficha { display: flex; flex-direction: row; align-items: center; max-width: 800px; margin: 0 auto; background-color: var(--color-blanco-espuma); padding: 40px; border-radius: 20px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05); }
+.ficha-imagen img { width: 220px; height: 220px; object-fit: cover; border-radius: 15px; }
+.sobre-mi-ficha picture > img { width: 300px; height: 400px; object-fit: cover; border-radius: 15px; display: block; }
 
 /* Acordeón */
-.acordeon { border-radius: 20px; border: none; }
-.acordeon-titulo { border-radius: 20px; }
+.acordeon { max-width: 900px; margin: 0 auto; border: none; border-radius: 20px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05); overflow: hidden; }
+.acordeon-titulo { background-color: var(--color-fondo); color: var(--color-acento); padding: 20px 30px; width: 100%; text-align: left; border: none; cursor: pointer; font-size: 1.25rem; }
 
-/* Media Queries (Manteniendo tu lógica original pero con los nuevos radios) */
+/* Footer */
+footer { background-color: var(--color-principal); color: var(--color-fondo); padding: 60px 0 20px; text-align: center; }
+
+/* Mantengo todas las Media Queries y Clases de Layout originales para asegurar que nada se desplace */
 @media (max-width: 767px) {
-    .hero { border-radius: 0 0 20px 20px; }
-    .servicio, .sobre-mi-ficha { border-radius: 15px; }
+    .navbar nav { position: absolute; top: 70px; background-color: var(--color-principal); width: 100%; display: none; flex-direction: column; }
+    .servicios-grid { grid-template-columns: 1fr; }
+    .sobre-mi-ficha { flex-direction: column; text-align: center; }
 }
-
-/* NOTA: He mantenido tus selectores específicos (como .logo-y-telefono, .contacto-flex, etc.) 
-   para que no se rompa la estructura de tu HTML. */
