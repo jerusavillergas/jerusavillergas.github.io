@@ -48,8 +48,7 @@ h1, h2, h3, h4 {
 h1 {
     font-size: 3rem; /* Título principal más grande */
     color: var(--color-blanco-espuma);
-    text-align:left;
-}
+    }
 h2 {
     font-size: 2.2rem; /* Títulos de sección más grandes */
     text-align: center;
