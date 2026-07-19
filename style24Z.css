@@ -1163,3 +1163,75 @@ ul.pie-menu a:hover {
         height: 40px; /* Reduce un poco el tamaño del logo en móviles si es necesario */
     }
 }
+
+/* ============================
+   Globo flotante de "Pedir cita"
+   Siempre visible, fijo sobre el contenido al hacer scroll
+   ============================ */
+.globo-cita {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color-calido);
+    color: var(--color-principal);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 15px 22px 15px 16px;
+    border-radius: 999px;
+    box-shadow: 0 8px 22px rgba(59, 89, 82, 0.28);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+}
+
+.globo-cita i {
+    font-size: 1.25rem;
+    position: relative;
+    z-index: 1;
+}
+
+.globo-cita-texto {
+    position: relative;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.globo-cita:hover {
+    background-color: var(--color-principal);
+    color: var(--color-blanco-espuma);
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(59, 89, 82, 0.32);
+}
+
+/* Anillo suave que respira alrededor del globo, para llamar la atención sin ser brusco */
+.globo-cita-anillo {
+    position: absolute;
+    inset: 0;
+    border-radius: 999px;
+    background-color: var(--color-calido);
+    opacity: 0.55;
+    z-index: 0;
+    animation: respirar-globo 2.6s ease-in-out infinite;
+}
+
+@keyframes respirar-globo {
+    0%   { transform: scale(1);   opacity: 0.45; }
+    70%  { transform: scale(1.18); opacity: 0; }
+    100% { transform: scale(1.18); opacity: 0; }
+}
+
+/* En móvil, se reduce a un círculo con solo el icono para no tapar contenido */
+@media (max-width: 600px) {
+    .globo-cita {
+        padding: 15px;
+        bottom: 16px;
+        right: 16px;
+    }
+
+    .globo-cita-texto {
+        display: none;
+    }
+}
