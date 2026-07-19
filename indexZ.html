@@ -188,7 +188,7 @@
                   </svg>
               </div>
               <div class="contenedor">
-                  <a href="https://calendar.app.google/iMaESLrsyje8AZtM9" class="boton">agenda una cita</a>
+                  <a href="https://calendar.app.google/iMaESLrsyje8AZtM9" target="_blank" class="boton">agenda una cita</a>
               </div>
         </section>
 
@@ -376,11 +376,27 @@
         <p>&copy; 2025 - Jerusa Villergas Psicología</p>
     </div>
 </footer>
-    <a href="//wa.me/34679218356" class="globo-cita" target="_blank" rel="noopener" aria-label="Pedir cita previa">
-    <span class="globo-cita-anillo" aria-hidden="true"></span>
-    <i class="fas fa-calendar-check"></i>
-    <span class="globo-cita-texto">Pedir cita</span>
-</a>
+   <div class="globo-cita-contenedor">
+        <div class="globo-opciones" id="globo-opciones">
+            <a href="https://wa.me/34679218356" class="globo-opcion" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+                <span class="globo-opcion-texto">WhatsApp</span>
+                <span class="globo-opcion-icono"><i class="fab fa-whatsapp"></i></span>
+            </a>
+            <a href="mailto:jerusavillergas@gmail.com" class="globo-opcion" aria-label="Escribir por email">
+                <span class="globo-opcion-texto">Email</span>
+                <span class="globo-opcion-icono"><i class="fas fa-envelope"></i></span>
+            </a>
+            <a href="https://calendar.app.google/iMaESLrsyje8AZtM9" class="globo-opcion" target="_blank" rel="noopener" aria-label="Reservar en la agenda">
+                <span class="globo-opcion-texto">Agenda</span>
+                <span class="globo-opcion-icono"><i class="fas fa-calendar-check"></i></span>
+            </a>
+        </div>
+        <button type="button" class="globo-cita" id="globo-cita-toggle" aria-expanded="false" aria-controls="globo-opciones" aria-label="Pedir cita previa">
+            <span class="globo-cita-anillo" aria-hidden="true"></span>
+            <i class="fas fa-calendar-check" aria-hidden="true"></i>
+            <span class="globo-cita-texto">Pedir cita</span>
+        </button>
+    </div>
 
     <script src="script24Z.js"></script>
 </body>
