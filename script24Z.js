@@ -59,4 +59,34 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+// --- Lógica del globo flotante de "Pedir cita" (WhatsApp / Email / Agenda) ---
+    const globoContenedor = document.querySelector('.globo-cita-contenedor');
+    const globoBoton = document.getElementById('globo-cita-toggle');
+
+    if (globoContenedor && globoBoton) {
+        globoBoton.addEventListener('click', function() {
+            const abierto = globoContenedor.classList.toggle('activo');
+            globoBoton.setAttribute('aria-expanded', abierto);
+        });
+
+        // Cierra el menú si se hace clic fuera de él
+        document.addEventListener('click', function(event) {
+            if (!globoContenedor.contains(event.target) && globoContenedor.classList.contains('activo')) {
+                globoContenedor.classList.remove('activo');
+                globoBoton.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Cierra el menú con la tecla Escape
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && globoContenedor.classList.contains('activo')) {
+                globoContenedor.classList.remove('activo');
+                globoBoton.setAttribute('aria-expanded', 'false');
+                globoBoton.focus();
+            }
+        });
+    }
+
+    
 });
