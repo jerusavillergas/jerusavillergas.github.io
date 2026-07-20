@@ -132,7 +132,7 @@ p {
 }
 
 .numero-telefono-header i {
-    color: var(--color-blanco-espuma);
+    color: var(--color-calido);
     font-size: 1.2rem; /* Tamaño del icono de teléfono */
 }
 
