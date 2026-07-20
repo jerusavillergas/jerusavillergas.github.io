@@ -744,14 +744,17 @@ ul.pie-menu a:hover {
 }
 
 .acordeon-titulo:hover {
-    background-color: #f0f0f0; /* Un gris muy suave al pasar el ratón */
+    background-color: #f0f0f0; /* gris muy suave al pasar el ratón */
 }
 
 .icono-acordeon {
-    width: 14px; /* Icono un poco más grande */
+    width: 14px; 
     height: 14px;
     position: relative;
     margin-left: 15px;
+    align-self: center;
+    flex-shrink: 0;
+    
 }
 
 .icono-acordeon::before,
@@ -1165,9 +1168,7 @@ ul.pie-menu a:hover {
 }
 
 /* ============================
-   Globo flotante de "Pedir cita"
-   Siempre visible, fijo sobre el contenido al hacer scroll.
-   Al pulsar, despliega WhatsApp / Email / Agenda.
+   Globo flotante
    ============================ */
 .globo-cita-contenedor {
     position: fixed;
@@ -1314,7 +1315,6 @@ ul.pie-menu a:hover {
     color: var(--color-blanco-espuma);
 }
 
-/* El icono de WhatsApp mantiene su verde de marca al reposo, para que se reconozca de un vistazo */
 .globo-opcion[aria-label="Escribir por WhatsApp"] .globo-opcion-icono {
     color: #25D366;
 }
