@@ -128,7 +128,7 @@ p {
 }
 
 .numero-telefono-header a:hover {
-    color: var(--color-acento); /* Color al pasar el ratón */
+    color: var(--color-calido); /* Color al pasar el ratón */
 }
 
 .numero-telefono-header i {
