@@ -714,7 +714,7 @@ ul.pie-menu a:hover {
     margin: 0 auto;
     border: 1px solid #e5e0d5;
     border-radius: 18px;
-    overflow: auto;                                     /*-------------------------------------  estaba en hidden -------------------*/
+    overflow: auto;                                    ç
     box-shadow: var(--sombra-suave);
 }
 
@@ -789,12 +789,12 @@ ul.pie-menu a:hover {
     background-color: #ffffff;
     /* padding: 0 30px; */ /* Eliminado padding fijo para manejar con active */
     max-height: 0;
-    overflow: auto;                                     /*-------------------------------------  estaba en hidden -------------------*/
+    overflow: auto;                                    
     transition: max-height 0.4s ease-out, padding 0.4s ease-out; /* Transición más larga */
 }
 
 .acordeon-contenido.active {
-    max-height: 700px;                                       /* ---------------------------estaba en 500 -----------------------------*/
+    max-height: 700px;                                      
     padding: 20px 30px; /* Más padding al abrir */
 }
 
@@ -807,7 +807,7 @@ ul.pie-menu a:hover {
 
 
 /* ======================================================= */
-/* ESTILOS PARA LA NUEVA SECCIÓN DE CONTACTO  */
+/* ESTILOS SECCIÓN DE CONTACTO  */
 /* ======================================================= */
 
 /* El h2 ya tiene estilos globales, ajustamos solo el margen si es necesario */
@@ -1161,7 +1161,7 @@ ul.pie-menu a:hover {
         display: block; /* none para ocultarlo */
         flex-basis: 100%;
         order: 3;
-        text-align: center;
+        text-align: left;
         margin-top: 8px;
     }
 
@@ -1173,7 +1173,7 @@ ul.pie-menu a:hover {
 
     .logo-y-telefono {
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: left;
         row-gap: 4px;
     }
     /* Ajustes si el logo queda muy grande en móvil */
