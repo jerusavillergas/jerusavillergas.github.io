@@ -984,7 +984,7 @@ ul.pie-menu a:hover {
     }
 
     .navbar .logo {
-        order: 0;                                                      /*--------------------------------- estaba en 1----------*/
+        order: 0;                                                      
         margin-right: 15px;
         text-align: left;
     }
@@ -1018,7 +1018,7 @@ ul.pie-menu a:hover {
         display: block;
         width: 100%;
         box-sizing: border-box;
-        text-align: left;                                                 /*--------------------------------estaba en center----------------------------*/
+        text-align: left;                                               
         white-space: normal;
     }
     
@@ -1158,9 +1158,24 @@ ul.pie-menu a:hover {
         text-align: left; /* En móvil, mejor alineado a la izquierda */
     }
     .nombre-header {
-        display: none; /* Oculta el nombre de teléfono en móviles */
+        display: block; /* none para ocultarlo */
+        flex-basis: 100%;
+        order: 3;
+        text-align: center;
+        margin-top: 8px;
     }
 
+    .nombre-header span {
+        border-left: none;
+        padding-left: 0;
+        font-size: 1rem;
+    }
+
+    .logo-y-telefono {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 4px;
+    }
     /* Ajustes si el logo queda muy grande en móvil */
     .logo img {
         height: 40px; /* Reduce un poco el tamaño del logo en móviles si es necesario */
